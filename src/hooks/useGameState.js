@@ -2,7 +2,7 @@
 import { useReducer, useCallback } from 'react'
 import { LEVELS, PASS_THRESHOLD, ROUNDS_PER_LEVEL } from '../data/levels'
 
-// ── helpers ──────────────────────────────────────────────────────
+// ── helpers ───────────────────────────────────────────────────────
 function loadUnlocked() {
   try {
     const s = localStorage.getItem('emojilingo_v2_unlocked')
@@ -16,14 +16,18 @@ function saveUnlocked(arr) {
 // ── initial state ─────────────────────────────────────────────────
 function init() {
   return {
-    screen: 'home',          // 'home' | 'game' | 'summary' | 'end'
+    screen: 'home',
     currentLevel: 1,
     currentRound: 0,
-    roundResults: [],        // [{emoji, userSentence, targetSentence, score, passed, reasoning}]
+    roundResults: [],
     totalScore: 0,
     unlockedLevels: loadUnlocked(),
     isLoading: false,
+    isLoadingSequence: false,
     error: null,
+    // live sequences fetched from API for current level
+    // shape: [{emoji, target}, {emoji, target}, {emoji, target}]
+    currentSequences: [],
   }
 }
 
@@ -38,28 +42,43 @@ function reducer(state, action) {
         currentLevel: action.level,
         currentRound: 0,
         roundResults: [],
+        currentSequences: [],
         isLoading: false,
+        isLoadingSequence: true,
         error: null,
+      }
+
+    case 'SEQUENCES_LOADED':
+      return {
+        ...state,
+        isLoadingSequence: false,
+        currentSequences: action.sequences,
+      }
+
+    case 'SEQUENCES_ERROR':
+      return {
+        ...state,
+        isLoadingSequence: false,
+        error: action.message,
       }
 
     case 'SUBMIT_START':
       return { ...state, isLoading: true, error: null }
 
     case 'SUBMIT_SUCCESS': {
-      const { userSentence, targetSentence, score, reasoning } = action
+      const { userSentence, targetSentence, score } = action
       const passed = score >= PASS_THRESHOLD
       const pointsEarned = passed
         ? Math.round(score * 100)
         : Math.round(score * 25)
-      const level = LEVELS.find(l => l.level === state.currentLevel)
-      const emoji = level.sequences[state.currentRound].emoji
+      const emoji = state.currentSequences[state.currentRound]?.emoji
 
       return {
         ...state,
         isLoading: false,
         roundResults: [
           ...state.roundResults,
-          { emoji, userSentence, targetSentence, score, passed, reasoning, pointsEarned }
+          { emoji, userSentence, targetSentence, score, passed, pointsEarned }
         ],
         totalScore: state.totalScore + pointsEarned,
       }
@@ -71,7 +90,6 @@ function reducer(state, action) {
     case 'NEXT_ROUND': {
       const nextRound = state.currentRound + 1
       if (nextRound >= ROUNDS_PER_LEVEL) {
-        // unlock next level
         const next = state.currentLevel + 1
         const unlocked = state.unlockedLevels.includes(next)
           ? state.unlockedLevels
@@ -101,13 +119,29 @@ function reducer(state, action) {
 export function useGameState() {
   const [state, dispatch] = useReducer(reducer, null, init)
 
-  const startLevel = useCallback((level) => {
-    dispatch({ type: 'START_LEVEL', level })
+  // Fetch 3 random sequences for the level from the API
+  const fetchSequences = useCallback(async (level) => {
+    try {
+      // 3 parallel requests to get 3 different random sequences
+      const results = await Promise.all(
+        Array.from({ length: ROUNDS_PER_LEVEL }, () =>
+          fetch(`/api/sequence?level=${level}`).then(r => r.json())
+        )
+      )
+      dispatch({ type: 'SEQUENCES_LOADED', sequences: results })
+    } catch (err) {
+      dispatch({ type: 'SEQUENCES_ERROR', message: err.message })
+    }
   }, [])
 
+  const startLevel = useCallback((level) => {
+    dispatch({ type: 'START_LEVEL', level })
+    fetchSequences(level)
+  }, [fetchSequences])
+
   const submitAnswer = useCallback(async (userSentence) => {
-    const level = LEVELS.find(l => l.level === state.currentLevel)
-    const { emoji } = level.sequences[state.currentRound]
+    const currentSeq = state.currentSequences[state.currentRound]
+    if (!currentSeq) return
 
     dispatch({ type: 'SUBMIT_START' })
 
@@ -115,7 +149,10 @@ export function useGameState() {
       const res = await fetch('/api/translate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ emojiSequence: emoji, userSentence }),
+        body: JSON.stringify({
+          userSentence,
+          targetSentence: currentSeq.target,
+        }),
       })
 
       if (!res.ok) throw new Error(`API error ${res.status}`)
@@ -126,31 +163,24 @@ export function useGameState() {
         userSentence,
         targetSentence: data.targetSentence,
         score: data.score,
-        reasoning: data.reasoning,
       })
     } catch (err) {
       dispatch({ type: 'SUBMIT_ERROR', message: err.message })
     }
-  }, [state.currentLevel, state.currentRound])
+  }, [state.currentSequences, state.currentRound])
 
-  const nextRound    = useCallback(() => dispatch({ type: 'NEXT_ROUND' }), [])
-  const goHome       = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
-  const restart      = useCallback(() => dispatch({ type: 'RESTART' }), [])
+  const nextRound = useCallback(() => dispatch({ type: 'NEXT_ROUND' }), [])
+  const goHome = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
+  const restart = useCallback(() => dispatch({ type: 'RESTART' }), [])
 
   // derived
-  const currentLevelData  = LEVELS.find(l => l.level === state.currentLevel)
-  const currentSequence   = currentLevelData?.sequences[state.currentRound]
-  const lastResult        = state.roundResults[state.roundResults.length - 1]
-  const hasResult         = state.roundResults.length > state.currentRound ||
-                            (state.screen === 'game' && lastResult &&
-                             state.roundResults.length === state.currentRound + 1)
+  const currentLevelData = LEVELS.find(l => l.level === state.currentLevel)
+  const currentSequence = state.currentSequences[state.currentRound]
 
   return {
     ...state,
     currentLevelData,
     currentSequence,
-    lastResult,
-    hasResult: state.roundResults.length > state.currentRound,
     startLevel,
     submitAnswer,
     nextRound,
