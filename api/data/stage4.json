@@ -1,0 +1,806 @@
+[
+  {
+    "emoji": "🚗 ⛰️ 🌲 🏞️",
+    "target": "The family drove to the mountains for a trip"
+  },
+  {
+    "emoji": "🍳 🍞 🥛 😋",
+    "target": "He made breakfast with eggs and toast"
+  },
+  {
+    "emoji": "🌧️ 🧥 👞 🏠",
+    "target": "It is raining so put on your coat and shoes"
+  },
+  {
+    "emoji": "🏫 📖 🗒️ 🤓",
+    "target": "The student studied the notes at school"
+  },
+  {
+    "emoji": "🎵 🎷 🥁 💃",
+    "target": "She danced while the band played jazz"
+  },
+  {
+    "emoji": "✈️ ☁️ 🏙️ 🗺️",
+    "target": "The plane flew over the city and clouds"
+  },
+  {
+    "emoji": "🏋️ 🥤 💪 🧼",
+    "target": "He drank water after lifting weights at the gym"
+  },
+  {
+    "emoji": "🏝️ 🌊 ⛵ ☀️",
+    "target": "We sailed the boat on the sunny ocean"
+  },
+  {
+    "emoji": "🤒 💊 🛌 😴",
+    "target": "He took medicine and slept in bed"
+  },
+  {
+    "emoji": "🏬 👗 👠 💶",
+    "target": "She bought a dress and shoes at the store"
+  },
+  {
+    "emoji": "🏡 🌷 🌼 🌳",
+    "target": "The garden has pretty flowers and trees"
+  },
+  {
+    "emoji": "🎞️ 🥤 🥨 😮",
+    "target": "We watched a movie and had snacks"
+  },
+  {
+    "emoji": "🥎 🧢 🏃 😅",
+    "target": "She played softball and ran fast"
+  },
+  {
+    "emoji": "🎨 🍎 🍐 🧐",
+    "target": "The artist painted the fruit bowl"
+  },
+  {
+    "emoji": "👶 🥛 🛌 💤",
+    "target": "The baby drank milk and went to sleep"
+  },
+  {
+    "emoji": "🤵 👰 💍 ❤️",
+    "target": "The groom gave the bride a ring"
+  },
+  {
+    "emoji": "🤠 🐴 🏜️ ☀️",
+    "target": "The cowboy rode his horse in the desert"
+  },
+  {
+    "emoji": "🥶 🌨️ 🧣 🧤",
+    "target": "It is freezing so wear a scarf and gloves"
+  },
+  {
+    "emoji": "🥊 😠 🤕 🔔",
+    "target": "The boxer was angry and got hurt"
+  },
+  {
+    "emoji": "👨 🚣 🌊 🐟",
+    "target": "The man fished in the ocean from his boat"
+  },
+  {
+    "emoji": "🧛 🦇 🕸️ 😱",
+    "target": "The vampire scared us in the dark web"
+  },
+  {
+    "emoji": "🦁 🦒 🦓 👀",
+    "target": "We saw a lion and zebra at the safari"
+  },
+  {
+    "emoji": "👶 🧼 🧴 😆",
+    "target": "The baby laughed during the bath"
+  },
+  {
+    "emoji": "🗺️ ⛵ 🦜 ⚔️",
+    "target": "The pirate sailed to find the fight"
+  },
+  {
+    "emoji": "🧹 🧽 🧼 🏠",
+    "target": "She cleaned the house with a broom and sponge"
+  },
+  {
+    "emoji": "🧙 ✨ 🐸 💨",
+    "target": "The wizard made the frog disappear"
+  },
+  {
+    "emoji": "👩 🔬 🧪 🤯",
+    "target": "The scientist tested the chemicals"
+  },
+  {
+    "emoji": "🧰 🔧 🔩 👨",
+    "target": "The man fixed the tool with a wrench"
+  },
+  {
+    "emoji": "🦋 🌼 ☀️ 🏞️",
+    "target": "A butterfly flew over the flower in the park"
+  },
+  {
+    "emoji": "🏦 💸 🤑 💼",
+    "target": "He took cash from the bank in his bag"
+  },
+  {
+    "emoji": "😴 🛌 💤 🌙",
+    "target": "He fell asleep and dreamed of the moon"
+  },
+  {
+    "emoji": "🌲 🌳 🦔 ⛰️",
+    "target": "The hedgehog lived in the forest mountains"
+  },
+  {
+    "emoji": "🤳 🏞️ 😄 👩",
+    "target": "The woman took a selfie in nature"
+  },
+  {
+    "emoji": "📺 📻 📄 🧐",
+    "target": "We listened to the news on the radio"
+  },
+  {
+    "emoji": "🥪 🧀 🥗 😋",
+    "target": "She ate a cheese sandwich and salad"
+  },
+  {
+    "emoji": "🌮 🥑 🌽 🤤",
+    "target": "He wanted a taco with avocado and corn"
+  },
+  {
+    "emoji": "🧁 🥛 😋 🥄",
+    "target": "We ate a cupcake and drank milk"
+  },
+  {
+    "emoji": "🎓 📜 🏫 😄",
+    "target": "The student graduated from the university"
+  },
+  {
+    "emoji": "👰 🤵 💍 🥂",
+    "target": "The couple drank champagne at the wedding"
+  },
+  {
+    "emoji": "🚒 🔥 🏠 😱",
+    "target": "The fire truck came to the burning house"
+  },
+  {
+    "emoji": "👩 🌾 🌽 🥕",
+    "target": "The farmer grew corn and carrots"
+  },
+  {
+    "emoji": "🤴 💍 ⚔️ 🗺️",
+    "target": "The king fought for the land with a sword"
+  },
+  {
+    "emoji": "🚀 🌙 ✨ 👨",
+    "target": "The man looked at the stars and moon"
+  },
+  {
+    "emoji": "🏝️ 🥥 ☀️ 🌊",
+    "target": "The tropical ocean has coconuts and sun"
+  },
+  {
+    "emoji": "🐀 🧀 🏠 😱",
+    "target": "The rat ate the cheese in the house"
+  },
+  {
+    "emoji": "🧘 🔇 🤫 🏡",
+    "target": "She stayed quiet and did yoga at home"
+  },
+  {
+    "emoji": "🦷 😷 🤕 😭",
+    "target": "The dentist treated the hurting tooth"
+  },
+  {
+    "emoji": "👩 👗 🧷 📐",
+    "target": "The tailor measured the dress with a ruler"
+  },
+  {
+    "emoji": "🍈 🍐 🥣 🥄",
+    "target": "We ate melon and pears from the bowl"
+  },
+  {
+    "emoji": "🐺 🌙 🌲 😱",
+    "target": "The wolf howled at the moon in the woods"
+  },
+  {
+    "emoji": "🏌️ 🧢 😎 ☀️",
+    "target": "He played golf in the hot sun"
+  },
+  {
+    "emoji": "🤱 👶 🥛 🏠",
+    "target": "The mother nursed the baby at home"
+  },
+  {
+    "emoji": "🧜 🌊 🐟 🏝️",
+    "target": "The mermaid swam in the ocean near the island"
+  },
+  {
+    "emoji": "🧐 👀 👞 💡",
+    "target": "The detective looked for clues with a light"
+  },
+  {
+    "emoji": "🦸 🦹 🏙️ 💥",
+    "target": "The hero fought the villain in the city"
+  },
+  {
+    "emoji": "🧛 🍷 🏠 🌙",
+    "target": "The vampire drank red wine in his dark home"
+  },
+  {
+    "emoji": "🧟 🧠 🌲 😱",
+    "target": "The zombie wanted brains in the scary forest"
+  },
+  {
+    "emoji": "🎅 🎁 🌲 🌨️",
+    "target": "Santa left gifts under the tree in the snow"
+  },
+  {
+    "emoji": "🏃 👞 🕰️ 😅",
+    "target": "The runner checked his time and sweated"
+  },
+  {
+    "emoji": "🎓 🏫 📕 🥳",
+    "target": "We celebrated graduation at the school"
+  },
+  {
+    "emoji": "👩 🌾 🌽 🚚",
+    "target": "The farmer drove the truck with corn"
+  },
+  {
+    "emoji": "🍳 🥩 🍞 🥛",
+    "target": "He ate steak and toast for a big breakfast"
+  },
+  {
+    "emoji": "🧺 🧼 👚 👗",
+    "target": "She washed the clothes and dress with soap"
+  },
+  {
+    "emoji": "🧘 🧼 🔇 😊",
+    "target": "He did yoga in a quiet clean room"
+  },
+  {
+    "emoji": "🛌 🤒 🤢 💊",
+    "target": "He was sick in bed and took a pill"
+  },
+  {
+    "emoji": "🚗 🛢️ 🗺️ 🛑",
+    "target": "The car needed oil and we stopped at the sign"
+  },
+  {
+    "emoji": "🚣 🐟 ⛵ ☀️",
+    "target": "They fished from the boat on a sunny day"
+  },
+  {
+    "emoji": "🎨 🤚 🔴 🔵",
+    "target": "The artist painted with red and blue colors"
+  },
+  {
+    "emoji": "🎵 🎷 🥁 🎤",
+    "target": "The band played jazz with a saxophone and drums"
+  },
+  {
+    "emoji": "👩 👗 👠 💅",
+    "target": "She dressed up with heels and nail polish"
+  },
+  {
+    "emoji": "🤵 💍 🌹 😘",
+    "target": "He proposed to her with a ring and a flower"
+  },
+  {
+    "emoji": "🥪 🥔 🥤 🥯",
+    "target": "We had a sandwich and soda for lunch"
+  },
+  {
+    "emoji": "🐶 🦴 🥎 🏞️",
+    "target": "The dog played with a ball in the park"
+  },
+  {
+    "emoji": "🐱 🐀 🥛 💺",
+    "target": "The cat chased the rat under the chair"
+  },
+  {
+    "emoji": "🐦 🐛 🌳 ☁️",
+    "target": "A bird ate a worm in the cloudy tree"
+  },
+  {
+    "emoji": "🦅 🦎 🏜️ 🐜",
+    "target": "The eagle hunted the lizard in the desert"
+  },
+  {
+    "emoji": "🦋 🌼 🌷 👃",
+    "target": "She smelled the tulips and saw a butterfly"
+  },
+  {
+    "emoji": "📼 🥨 🎞️ 😎",
+    "target": "We watched a movie tape and ate pretzels"
+  },
+  {
+    "emoji": "🔥 🧳 🌙 🍖",
+    "target": "We camped with a fire and meat at night"
+  },
+  {
+    "emoji": "🚀 👨 👹 ⚪",
+    "target": "The astronaut met a monster on the white planet"
+  },
+  {
+    "emoji": "🏠 🦕 ⚔️ 💪",
+    "target": "The hero used strength to fight the dinosaur"
+  },
+  {
+    "emoji": "🚢 🔗 🌊 🦈",
+    "target": "The ship chain rusted in the shark waters"
+  },
+  {
+    "emoji": "🚗 🤕 💊 🚒",
+    "target": "The fire truck came to help the injured driver"
+  },
+  {
+    "emoji": "🚒 🔥 🏢 😱",
+    "target": "The office building was on fire and people screamed"
+  },
+  {
+    "emoji": "🤠 💣 💵 🏦",
+    "target": "The cowboy stopped the bank robbery with a bomb"
+  },
+  {
+    "emoji": "🚆 🚉 📄 🕰️",
+    "target": "The train arrived at the station on time"
+  },
+  {
+    "emoji": "✈️ 💺 ☁️ 🍷",
+    "target": "We flew in the clouds and drank wine"
+  },
+  {
+    "emoji": "🛳️ 🥃 👚 😎",
+    "target": "She relaxed on the cruise with a drink"
+  },
+  {
+    "emoji": "🛐 🙏 📖 ✨",
+    "target": "He prayed and read the holy book"
+  },
+  {
+    "emoji": "💵 📊 🤵 😟",
+    "target": "The rich man worried about the market charts"
+  },
+  {
+    "emoji": "🗳️ 📂 🤚 ✅",
+    "target": "She voted and put the file in the box"
+  },
+  {
+    "emoji": "💡 🧠 💭 🗒️",
+    "target": "He wrote down his bright idea on the pad"
+  },
+  {
+    "emoji": "🔬 🧪 👨 🐀",
+    "target": "The scientist tested the rat in the lab"
+  },
+  {
+    "emoji": "👀 🌃 ✨ 🌝",
+    "target": "We looked at the moon and stars at night"
+  },
+  {
+    "emoji": "⚔️ 🚪 🤴 🐴",
+    "target": "The king rode a horse to the castle door"
+  },
+  {
+    "emoji": "🔧 🔩 🔗 🦺",
+    "target": "The worker fixed the chain with a wrench"
+  },
+  {
+    "emoji": "🧹 💩 🧻 🤢",
+    "target": "He cleaned the dirty mess with paper"
+  },
+  {
+    "emoji": "🛌 🥒 🔇 🧘",
+    "target": "She relaxed at the spa with cucumber eyes"
+  },
+  {
+    "emoji": "💨 ❎ 🤮 👃",
+    "target": "The smoke smell was banned and gross"
+  },
+  {
+    "emoji": "🍷 🧀 🥖 🎵",
+    "target": "We ate cheese and bread with wine and music"
+  },
+  {
+    "emoji": "🥣 🥄 🥛 🧇",
+    "target": "He ate cereal and waffles for breakfast"
+  },
+  {
+    "emoji": "🥗 🥒 🥕 🥣",
+    "target": "She made a salad with cucumber and carrots"
+  },
+  {
+    "emoji": "🌮 🥑 🌽 🥙",
+    "target": "We had tacos with avocado and corn"
+  },
+  {
+    "emoji": "🍎 🍐 🥝 🍈",
+    "target": "The fruit salad had apples, pears, and kiwi"
+  },
+  {
+    "emoji": "🧁 🥯 🥐 🥨",
+    "target": "She bought a cupcake and bagel at the bakery"
+  },
+  {
+    "emoji": "🍺 🥨 🥜 🥡",
+    "target": "He drank beer and ate salty snacks"
+  },
+  {
+    "emoji": "🧳 ✈️ 🗺️ 🏙️",
+    "target": "We traveled to the city with a map"
+  },
+  {
+    "emoji": "🏝️ 🥥 🥝 ☀️",
+    "target": "The tropical island was sunny and sweet"
+  },
+  {
+    "emoji": "🌨️ 🧣 🧤 🧥",
+    "target": "Wear a scarf and gloves in the snow"
+  },
+  {
+    "emoji": "☀️ 🥵 🥤 🧢",
+    "target": "It is hot so wear a cap and drink water"
+  },
+  {
+    "emoji": "🌧️ 🧥 👢 🏠",
+    "target": "Put on boots and a coat for the rain"
+  },
+  {
+    "emoji": "🛌 💤 😴 🌃",
+    "target": "He slept well during the night"
+  },
+  {
+    "emoji": "🧼 🧴 🧽 🦷",
+    "target": "Brush your teeth and wash with soap"
+  },
+  {
+    "emoji": "🧹 🧽 🧼 🧻",
+    "target": "Clean the mess with a sponge and broom"
+  },
+  {
+    "emoji": "🏫 📕 📘 🗒️",
+    "target": "The student had a notebook and books"
+  },
+  {
+    "emoji": "💼 🏢 📠 📊",
+    "target": "He worked in the office with data"
+  },
+  {
+    "emoji": "⚕️ 💊 🤒 😷",
+    "target": "The doctor treated the sick patient"
+  },
+  {
+    "emoji": "❤️ 💋 💍 🏩",
+    "target": "They fell in love and got married"
+  },
+  {
+    "emoji": "👶 🥛 🤱 🧼",
+    "target": "She fed the baby and washed him"
+  },
+  {
+    "emoji": "🐶 🦴 🥎 🌳",
+    "target": "The dog played with a ball in the park"
+  },
+  {
+    "emoji": "🐱 🐟 🥛 🐀",
+    "target": "The cat hunted the rat and ate fish"
+  },
+  {
+    "emoji": "🐮 🐷 🐏 🌾",
+    "target": "The farm has cows, pigs, and sheep"
+  },
+  {
+    "emoji": "🦁 🐻 🦒 🦓",
+    "target": "We saw lions and bears at the zoo"
+  },
+  {
+    "emoji": "🦈 🐟 🌊 🧜",
+    "target": "The mermaid swam with fish in the ocean"
+  },
+  {
+    "emoji": "🐜 🐛 🕸️ 🦟",
+    "target": "The spider web caught a fly and bug"
+  },
+  {
+    "emoji": "🧙 ✨ 🐸 🧹",
+    "target": "The witch cast a spell on the frog"
+  },
+  {
+    "emoji": "🚀 🌍 🌝 🌃",
+    "target": "The rocket flew to the moon at night"
+  },
+  {
+    "emoji": "🥅 🤺 🥋 🥊",
+    "target": "He liked boxing and martial arts"
+  },
+  {
+    "emoji": "🎨 👗 👠 👢",
+    "target": "The designer made a dress and boots"
+  },
+  {
+    "emoji": "🎞️ 📼 📺 🥨",
+    "target": "We watched a movie and ate pretzels"
+  },
+  {
+    "emoji": "💵 💶 💷 🏧",
+    "target": "He exchanged dollars and euros at the bank"
+  },
+  {
+    "emoji": "👗 👠 👒 💼",
+    "target": "She packed shoes and a hat in her bag"
+  },
+  {
+    "emoji": "🔧 🔩 ⛏️ 🧰",
+    "target": "The builder used a wrench and pickaxe"
+  },
+  {
+    "emoji": "🏡 🌳 🌷 🌹",
+    "target": "The garden has roses and tulips"
+  },
+  {
+    "emoji": "🌲 🦔 🦌 🥜",
+    "target": "The deer and hedgehog live in the woods"
+  },
+  {
+    "emoji": "🏜️ 🦎 ☀️ 🥵",
+    "target": "The lizard sat in the hot desert sun"
+  },
+  {
+    "emoji": "⛰️ 🧗 🐐 🦅",
+    "target": "The eagle flew over the mountain goats"
+  },
+  {
+    "emoji": "🤴 🏠 ⚔️ 💍",
+    "target": "The king defended his home with a sword"
+  },
+  {
+    "emoji": "👻 🕸️ 🦇 🧛",
+    "target": "The vampire turned into a bat"
+  },
+  {
+    "emoji": "🤡 🤹 🎲 🎤",
+    "target": "The clown sang and played games"
+  },
+  {
+    "emoji": "🥚 🐣 🦕 🦖",
+    "target": "The dinosaur egg hatched"
+  },
+  {
+    "emoji": "🎅 🦌 🎁 🌨️",
+    "target": "Santa brought gifts in the snow"
+  },
+  {
+    "emoji": "🔥 🚒 🏙️ 😱",
+    "target": "The fire truck arrived at the city fire"
+  },
+  {
+    "emoji": "🔧 🔗 💡 🧰",
+    "target": "He fixed the light with a tool"
+  },
+  {
+    "emoji": "📜 🧐 🦖 🦴",
+    "target": "He found an old bone and scroll"
+  },
+  {
+    "emoji": "💽 💿 📻 📠",
+    "target": "The old radio and disk player still work"
+  },
+  {
+    "emoji": "🤳 📶 📠 📺",
+    "target": "He checked the signal on his device"
+  },
+  {
+    "emoji": "🕰️ 🗒️ 💤 🛌",
+    "target": "He planned his sleep schedule"
+  },
+  {
+    "emoji": "🔴 🔵 🔶 🔷",
+    "target": "The shapes are red, blue, and orange"
+  },
+  {
+    "emoji": "🦵 🦶 👞 🧦",
+    "target": "Put socks and shoes on your feet"
+  },
+  {
+    "emoji": "🌽 🥕 🥔 🌾",
+    "target": "The farm grew corn, carrots, and potatoes"
+  },
+  {
+    "emoji": "🍎 🍐 🍑 🍋",
+    "target": "He picked apples, pears, peaches, and lemons"
+  },
+  {
+    "emoji": "🌮 🥑 🌽 🥗",
+    "target": "We ate tacos with avocado and corn salad"
+  },
+  {
+    "emoji": "🥖 🧀 🍞 🥨",
+    "target": "The bakery sold bread, cheese, and pretzels"
+  },
+  {
+    "emoji": "🍗 🍖 🥩 🔥",
+    "target": "We grilled chicken and steak on the fire"
+  },
+  {
+    "emoji": "🍚 🍜 🥢 🥟",
+    "target": "He used chopsticks to eat rice and dumplings"
+  },
+  {
+    "emoji": "🍷 🍾 🥂 🧀",
+    "target": "They drank wine and champagne with cheese"
+  },
+  {
+    "emoji": "🥛 🥣 🥄 🧇",
+    "target": "He ate waffles and cereal with milk"
+  },
+  {
+    "emoji": "🐶 🦴 🏠 🌳",
+    "target": "The dog took his bone to the doghouse"
+  },
+  {
+    "emoji": "🐱 🐟 🐀 🥛",
+    "target": "The cat chased the rat and drank milk"
+  },
+  {
+    "emoji": "🦅 🦉 🦇 🕊️",
+    "target": "Birds and bats flew in the sky"
+  },
+  {
+    "emoji": "🦁 🦓 🦒 🐗",
+    "target": "Wild animals roam the safari"
+  },
+  {
+    "emoji": "🐸 🦎 🦕 🦖",
+    "target": "The frog watched the dinosaurs"
+  },
+  {
+    "emoji": "🐟 🦈 🌊 🏊",
+    "target": "The swimmer saw a shark in the water"
+  },
+  {
+    "emoji": "🦋 🐛 🐜 🕸️",
+    "target": "Insects crawled near the spider web"
+  },
+  {
+    "emoji": "🥪 🧀 🥩 🍞",
+    "target": "He made a meat and cheese sandwich"
+  },
+  {
+    "emoji": "🥎 🥅 🥊 🥋",
+    "target": "They played sports and martial arts"
+  },
+  {
+    "emoji": "🎨 🎲 🎰 🤹",
+    "target": "The artist juggled and played games"
+  },
+  {
+    "emoji": "🎷 🥁 🎵 🎤",
+    "target": "The band played music and sang"
+  },
+  {
+    "emoji": "🚗 🚚 🚒 🛑",
+    "target": "The trucks stopped at the sign"
+  },
+  {
+    "emoji": "✈️ 🚀 💺 ☁️",
+    "target": "The plane and rocket flew in clouds"
+  },
+  {
+    "emoji": "🛳️ ⛴️ ⛵ 🌊",
+    "target": "Boats sailed on the ocean waves"
+  },
+  {
+    "emoji": "👞 👠 👢 🧦",
+    "target": "He put on socks and shoes"
+  },
+  {
+    "emoji": "👗 👚 👒 🧥",
+    "target": "She wore a dress, coat, and hat"
+  },
+  {
+    "emoji": "💊 🧪 🧬 🔬",
+    "target": "Scientists studied dna and medicine"
+  },
+  {
+    "emoji": "🔧 🔩 🧰 🔗",
+    "target": "He fixed the chain with tools"
+  },
+  {
+    "emoji": "🧻 🧼 🧽 🧹",
+    "target": "Clean the bathroom with soap and sponge"
+  },
+  {
+    "emoji": "🕰️ 🗒️ 📃 📊",
+    "target": "He checked the time and the report"
+  },
+  {
+    "emoji": "📺 📻 📼 💿",
+    "target": "We watched tv and listened to radio"
+  },
+  {
+    "emoji": "💵 💶 💷 💴",
+    "target": "He exchanged different currencies"
+  },
+  {
+    "emoji": "🚣 🤽 🏊 🐟",
+    "target": "They played water polo and rowed"
+  },
+  {
+    "emoji": "🏫 🎓 📖 📕",
+    "target": "The student read books at school"
+  },
+  {
+    "emoji": "🏠 🚪 🔑 🔓",
+    "target": "Unlock the door to the house"
+  },
+  {
+    "emoji": "🌲 🌳 🌴 🥥",
+    "target": "Trees and coconuts grow here"
+  },
+  {
+    "emoji": "☀️ ☁️ 🌧️ 🌨️",
+    "target": "The weather changed from sun to snow"
+  },
+  {
+    "emoji": "🍎 🐛 🐦 🌳",
+    "target": "The worm in the apple was eaten by a bird"
+  },
+  {
+    "emoji": "🍈 🍋 🍐 🍑",
+    "target": "Fresh melon, lemon, pear, and peach"
+  },
+  {
+    "emoji": "🍳 🥚 🍞 🧂",
+    "target": "He cooked eggs with toast and salt"
+  },
+  {
+    "emoji": "🏋️ 💪 🤸 🧘",
+    "target": "The athlete exercised and meditated"
+  },
+  {
+    "emoji": "🤺 ⚔️ 🐴 🤠",
+    "target": "The cowboy rode a horse to the fight"
+  },
+  {
+    "emoji": "🤳 🏞️ 😎 🧢",
+    "target": "He took a selfie in the park with a hat"
+  },
+  {
+    "emoji": "🤧 🤕 🤒 💊",
+    "target": "He was sick and took medicine"
+  },
+  {
+    "emoji": "🧛 🦇 🌙 👻",
+    "target": "Vampires and ghosts come out at night"
+  },
+  {
+    "emoji": "🦴 🦷 👂 🦵",
+    "target": "The skeleton has teeth and legs"
+  },
+  {
+    "emoji": "👶 🤰 🤱 👪",
+    "target": "The family has a new baby"
+  },
+  {
+    "emoji": "🍷 🥃 🍾 🥂",
+    "target": "We drank wine and whiskey"
+  },
+  {
+    "emoji": "🏠 🔑 🚪 🧹",
+    "target": "Clean the house and lock the door"
+  },
+  {
+    "emoji": "🗑️ 🧹 🧻 💩",
+    "target": "Clean up the trash and mess"
+  },
+  {
+    "emoji": "🕯️ 💡 ☀️ 🔥",
+    "target": "The candle and fire give light like the sun"
+  },
+  {
+    "emoji": "🔙 🔚 🔛 🔜",
+    "target": "Direction arrows"
+  },
+  {
+    "emoji": "🥣 🍲 🍜 🥄",
+    "target": "Soup and noodles"
+  }
+]

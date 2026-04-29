@@ -1,0 +1,602 @@
+[
+  {
+    "emoji": "🥚 🧀 🍞 🥛 😋",
+    "target": "The breakfast included eggs cheese bread and fresh milk"
+  },
+  {
+    "emoji": "🌮 🥙 🥑 🌽 🥤",
+    "target": "They ordered tacos and salad with avocado and corn for lunch"
+  },
+  {
+    "emoji": "🍚 🍜 🥟 🥢 🥡",
+    "target": "We ate rice and noodles with dumplings from the takeout box"
+  },
+  {
+    "emoji": "🥗 🥕 🥒 🥦 🥛",
+    "target": "She prepared a healthy salad with carrots cucumber and broccoli"
+  },
+  {
+    "emoji": "🍎 🍐 🍑 🥝 🍈",
+    "target": "The fruit salad had apple pear peach kiwi and melon slices"
+  },
+  {
+    "emoji": "🧁 🥛 🥨 🥜 😋",
+    "target": "The snack was a cupcake with milk pretzels and peanuts"
+  },
+  {
+    "emoji": "🍷 🥂 🍾 🍺 🥃",
+    "target": "The bar served wine champagne beer and whiskey all night"
+  },
+  {
+    "emoji": "🍗 🍖 🥩 🥘 🍷",
+    "target": "We cooked chicken meat and steak in a pan with wine"
+  },
+  {
+    "emoji": "🥪 🧀 🍞 🧺 ☀️",
+    "target": "We packed sandwiches cheese and bread in the basket for a sunny day"
+  },
+  {
+    "emoji": "🐮 🐷 🐴 🐏 🏡",
+    "target": "The farm had a cow pig horse and ram near the house"
+  },
+  {
+    "emoji": "🦁 🦓 🦒 🦘 🐻",
+    "target": "The zoo animals included a lion zebra giraffe kangaroo and bear"
+  },
+  {
+    "emoji": "🦈 🐟 🌊 ⛵ ☁️",
+    "target": "The shark and fish swam in the ocean near the boat and clouds"
+  },
+  {
+    "emoji": "🦅 🦉 🕊️ 🦜 🦢",
+    "target": "The eagle owl dove parrot and swan are all birds"
+  },
+  {
+    "emoji": "🦋 🐛 🐜 🦟 🦗",
+    "target": "The garden was full of butterflies bugs ants mosquitoes and crickets"
+  },
+  {
+    "emoji": "🐶 🐱 🏠 🦴 🐾",
+    "target": "The dog and cat live in the house with their bone"
+  },
+  {
+    "emoji": "🦉 🦇 🐺 🌙 🌟",
+    "target": "The owl bat and wolf came out under the moon and stars"
+  },
+  {
+    "emoji": "🐻 🦊 🐗 🌲 🌳",
+    "target": "The bear fox and boar live among the pine and deciduous trees"
+  },
+  {
+    "emoji": "🦖 🦕 🦎 🌿 🍖",
+    "target": "The dinosaur and lizard ate plants and meat in the wild"
+  },
+  {
+    "emoji": "🐻 🧊 🧣 🧤 🧥",
+    "target": "The bear felt cold so he wore a scarf gloves and coat"
+  },
+  {
+    "emoji": "🏫 📖 🎓 🏢 🤓",
+    "target": "The student read a book at school and graduated with glasses"
+  },
+  {
+    "emoji": "🏢 💼 📠 🗂️ 📊",
+    "target": "The office worker used a briefcase fax machine and files for the chart"
+  },
+  {
+    "emoji": "🎵 🎷 🥁 🎤 📻",
+    "target": "The band played music with a saxophone drum microphone and radio"
+  },
+  {
+    "emoji": "🥊 🥋 🏊 🏄 🏋️",
+    "target": "The athlete practiced boxing swimming surfing and weightlifting"
+  },
+  {
+    "emoji": "👗 👚 👠 👢 👞",
+    "target": "She bought a dress blouse heels boots and shoes"
+  },
+  {
+    "emoji": "💍 👜 🧣 🧤 👒",
+    "target": "She wore a ring and carried a bag scarf gloves and hat"
+  },
+  {
+    "emoji": "🏠 🏡 🛌 🚪 🔑",
+    "target": "The house has a bed a door and a secure key"
+  },
+  {
+    "emoji": "🏠 🔧 🧰 🔩 🚪",
+    "target": "He fixed the house door using a wrench toolbox and bolt"
+  },
+  {
+    "emoji": "🏦 💵 💸 🏧 💲",
+    "target": "The bank exchanged dollar bills and money at the atm"
+  },
+  {
+    "emoji": "❤️ 💍 👰 🤵 🛐",
+    "target": "The groom and bride exchanged rings at the place of worship"
+  },
+  {
+    "emoji": "😴 💤 🛌 🌙 🌃",
+    "target": "He went to sleep in his bed under the moon and city night"
+  },
+  {
+    "emoji": "🧹 🧽 🧼 🧴 🏠",
+    "target": "She cleaned the house with a broom sponge soap and lotion"
+  },
+  {
+    "emoji": "🚗 🚚 🛑 🗺️ 🏙️",
+    "target": "The car and truck stopped at the sign on the city map"
+  },
+  {
+    "emoji": "🛳️ ⛴️ 🚢 🗺️ 🌊",
+    "target": "The ships and boats sailed across the ocean using a chart"
+  },
+  {
+    "emoji": "🔥 🚒 🏥 💊 🤒",
+    "target": "The fire truck rushed to the hospital with medicine for the fever"
+  },
+  {
+    "emoji": "☀️ ☁️ 🌧️ 🌊 🧊",
+    "target": "The weather changed from sun and cloud to rain and ice"
+  },
+  {
+    "emoji": "🕰️ 0️⃣ 1️⃣ 2️⃣ 3️⃣",
+    "target": "The old clock struck one two three in the afternoon"
+  },
+  {
+    "emoji": "4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣",
+    "target": "The numbers listed were four five six seven and eight"
+  },
+  {
+    "emoji": "0️⃣ 1️⃣ 🔟 💯 ✖️",
+    "target": "The student scored zero one ten and one hundred on the math test"
+  },
+  {
+    "emoji": "🧪 🔬 🧬 🧠 🦴",
+    "target": "The scientist studied the dna brain and bone with a microscope"
+  },
+  {
+    "emoji": "🧙 🧛 🧜 🧞 🦄",
+    "target": "The wizard vampire mermaid genie and unicorn are mythical creatures"
+  },
+  {
+    "emoji": "👻 🧟 🧛 👹 😱",
+    "target": "The ghost zombie and vampire made the ogre scream in fear"
+  },
+  {
+    "emoji": "🎁 🧁 🎇 🥳 🍾",
+    "target": "We celebrated with gifts cupcakes fireworks and champagne"
+  },
+  {
+    "emoji": "💬 💭 🗣️ 🔉 🔇",
+    "target": "The speaker spoke but the sound was muted in the thought bubble"
+  },
+  {
+    "emoji": "🔧 🔩 🧲 🔗 🧷",
+    "target": "The tools included a wrench bolt magnet link and pin"
+  },
+  {
+    "emoji": "🧻 🧼 🧽 🧴 🌊",
+    "target": "The bathroom had paper soap a sponge lotion and water"
+  },
+  {
+    "emoji": "➡️ 🔙 🔚 🔜 🔝",
+    "target": "Follow the arrows forward back end soon and top"
+  },
+  {
+    "emoji": "✅ ❎ 🔞 📶 🚹",
+    "target": "The signs showed check cross under eighteen signal and men's room"
+  },
+  {
+    "emoji": "👪 👨 👩 👶 🏠",
+    "target": "The family includes a father mother and baby in the house"
+  },
+  {
+    "emoji": "❤️ 💋 🏩 🌹 🎁",
+    "target": "She received a kiss a ring a rose and a gift at the hotel"
+  },
+  {
+    "emoji": "👩 🍳 🥘 🍷 😋",
+    "target": "The woman cooked a stew and served it with wine"
+  },
+  {
+    "emoji": "🦇 🐃 🥊 🐟 🐛",
+    "target": "The bat and water buffalo saw a fish and a bug near the boxing glove"
+  },
+  {
+    "emoji": "🥡 🦩 🦉 🐟 🐃",
+    "target": "The takeout box had fish for the flamingo owl and buffalo"
+  },
+  {
+    "emoji": "🦔 🐣 🍺 🌷 🎞️",
+    "target": "The hedgehog and chick drank beer near the tulip and film strip"
+  },
+  {
+    "emoji": "🦘 🦮 🦖 🦋 🦈",
+    "target": "The kangaroo dog and dinosaur watched the butterfly and shark"
+  },
+  {
+    "emoji": "🦬 🗃️ 🦉 🦎 🦗",
+    "target": "The bison found a file box near the owl lizard and cricket"
+  },
+  {
+    "emoji": "🦙 🥊 🦗 🐦 🦋",
+    "target": "The llama wore a boxing glove to fight the cricket bird and butterfly"
+  },
+  {
+    "emoji": "🐂 🌹 🦖 🦩 🐗",
+    "target": "The ox and boar ate a rose while the dinosaur and flamingo watched"
+  },
+  {
+    "emoji": "🦈 🦖 🦘 🐀 🦇",
+    "target": "The shark and dinosaur frightened the kangaroo rat and bat"
+  },
+  {
+    "emoji": "🥡 🦅 🦗 ✖️ 🌹",
+    "target": "The eagle and cricket sat on the takeout box with a cross and rose"
+  },
+  {
+    "emoji": "🦮 🐂 🐐 🎋 🐦",
+    "target": "The guide dog led the ox and goat past the tree and bird"
+  },
+  {
+    "emoji": "🌾 🥙 🥦 🍐 🍖",
+    "target": "The meal included rice meat broccoli and a pear"
+  },
+  {
+    "emoji": "🥘 🥥 🌮 🥖 🥛",
+    "target": "The pan contained a coconut taco bread and milk"
+  },
+  {
+    "emoji": "🥢 🏢 🏣 🧇 🧉",
+    "target": "The office workers ate waffles and drank mate with chopsticks"
+  },
+  {
+    "emoji": "🥝 🧁 🍴 🧂 🍈",
+    "target": "The kiwi cupcake and melon were served with a fork and salt"
+  },
+  {
+    "emoji": "🍐 🍈 🧋 🥙 🥫",
+    "target": "The canned food included pear melon tea and a stuffed pita"
+  },
+  {
+    "emoji": "🧉 🧋 🏣 🥒 🔶",
+    "target": "The post office served tea cucumber and a large orange gem"
+  },
+  {
+    "emoji": "🥪 🌾 🥥 🌮 🥜",
+    "target": "The sandwich taco and peanuts were made with rice and coconut"
+  },
+  {
+    "emoji": "🍲 🥖 🥪 🥑 🍴",
+    "target": "The fork was used for the soup bread sandwich and avocado"
+  },
+  {
+    "emoji": "🥦 🍐 🥒 🍲 💪",
+    "target": "The strong man ate broccoli pear cucumber and soup"
+  },
+  {
+    "emoji": "🥝 🍐 🥨 🍲 🧀",
+    "target": "The cheese soup came with a pretzel kiwi and pear"
+  },
+  {
+    "emoji": "💵 🎤 🔬 🙁 🏫",
+    "target": "The school bought a microphone and microscope with the dollar bills"
+  },
+  {
+    "emoji": "🦽 🤠 😭 😏 😘",
+    "target": "The cowboy in the wheelchair cried and then kissed his friend"
+  },
+  {
+    "emoji": "🏜️ 🌞 💋 0️⃣ 🖕",
+    "target": "The sun shone on the desert kiss and the zero finger sign"
+  },
+  {
+    "emoji": "🥁 🚪 🐮 🧻 🦻",
+    "target": "The cow heard the drum through the door and grabbed the tissue"
+  },
+  {
+    "emoji": "🐻 👉 🚪 😑 🤐",
+    "target": "The bear pointed at the door and kept his mouth shut"
+  },
+  {
+    "emoji": "🔟 🤢 🥭 🗻 6️⃣",
+    "target": "The sick person ate mango near the mountain at ten and six"
+  },
+  {
+    "emoji": "🍳 📕 🐷 🐶 🥁",
+    "target": "The pig and dog played the drum while reading the cookbook"
+  },
+  {
+    "emoji": "🏦 🧗 🦊 👏 😠",
+    "target": "The angry fox clapped for the climber at the bank"
+  },
+  {
+    "emoji": "🎓 🏊 🥂 👦 😄",
+    "target": "The graduate swam and drank champagne with the happy boy"
+  },
+  {
+    "emoji": "🥯 😶 🌗 💼 🥎",
+    "target": "The silent worker carried a briefcase bagel and softball"
+  },
+  {
+    "emoji": "🧛 🎁 👂 🚣 💺",
+    "target": "The vampire listened to the gift on the boat seat"
+  },
+  {
+    "emoji": "🧅 💲 💷 🚣 ☁️",
+    "target": "The cloud floated over the boat filled with onions and money"
+  },
+  {
+    "emoji": "🚚 👹 🛑 🥻 🧅",
+    "target": "The truck carried an ogre onions a sari and a stop sign"
+  },
+  {
+    "emoji": "➗ 🦹 🦣 🆕 🚚",
+    "target": "The superhero divided the new mammoth into the truck"
+  },
+  {
+    "emoji": "🤺 🛌 🥯 🚆 🥎",
+    "target": "The fencer slept on the train with a bagel and ball"
+  },
+  {
+    "emoji": "🔔 🧆 🏩 ❔ 🗣️",
+    "target": "The hotel bell rang and the person spoke about the falafel"
+  },
+  {
+    "emoji": "🥗 💱 🚉 🍗 🧷",
+    "target": "The salad and chicken were exchanged at the station safely"
+  },
+  {
+    "emoji": "✴️ 🥗 🔓 🚚 📃",
+    "target": "The truck document listed a salad unlock code and star"
+  },
+  {
+    "emoji": "🆓 💸 🏩 ✡️ ⛏️",
+    "target": "The miner found free money and a star at the hotel"
+  },
+  {
+    "emoji": "📼 🎲 🤽 💴 🌨️",
+    "target": "The gamer played water polo in the snow with a tape and money"
+  },
+  {
+    "emoji": "🚣 🧐 🦬 🐮 🧝",
+    "target": "The elf and rich man rowed past the cow and buffalo"
+  },
+  {
+    "emoji": "🔞 🥩 🤤 👃 👰",
+    "target": "The bride smelled the steak and drooled in the restricted area"
+  },
+  {
+    "emoji": "🤬 ❗ 7️⃣ 🛢️ ☪️",
+    "target": "He cursed at the oil drum number seven and the crescent star"
+  },
+  {
+    "emoji": "😶 🍑 🦩 🌾 🥁",
+    "target": "The flamingo played the drum silently near the peach and rice"
+  },
+  {
+    "emoji": "➡️ 🥒 💔 😐 🦽",
+    "target": "The arrow pointed to the cucumber broken heart and wheelchair"
+  },
+  {
+    "emoji": "💩 🤏 🤮 ⚔️ 😵",
+    "target": "The smell of poop made him vomit and feel dizzy in the fight"
+  },
+  {
+    "emoji": "🚒 🥡 🤥 💯 ✴️",
+    "target": "The fire truck brought a hundred boxes of food and stars"
+  },
+  {
+    "emoji": "🏙️ 🚗 🤗 🥖 ⚧️",
+    "target": "The car drove through the city with bread and a hug"
+  },
+  {
+    "emoji": "🧼 📜 🧞 💶 📒",
+    "target": "The genie came from the scroll with soap money and a book"
+  },
+  {
+    "emoji": "🥋 😮 🔩 🔗 🤫",
+    "target": "The martial artist was shocked by the nut link and silence"
+  },
+  {
+    "emoji": "💍 🤓 💷 🕰️ 🔊",
+    "target": "The nerd bought a ring and clock with his pound notes"
+  },
+  {
+    "emoji": "🚪 🏃 🙁 👈 🗺️",
+    "target": "He ran out the door frowning and pointing at the map"
+  },
+  {
+    "emoji": "🛢️ ⛰️ 🏄 📻 🏡",
+    "target": "He listened to the radio while surfing near the house and oil drum"
+  },
+  {
+    "emoji": "🚟 🚚 🧥 🔬 💔",
+    "target": "The scientist with a broken heart left his coat in the truck"
+  },
+  {
+    "emoji": "😬 🥯 🙃 🍾 👉",
+    "target": "He made a grimace while pointing at the bagel and champagne"
+  },
+  {
+    "emoji": "🥵 2️⃣ 💤 📖 🔬",
+    "target": "The hot student fell asleep reading two books near the microscope"
+  },
+  {
+    "emoji": "⛵ 🥶 👨 👧 📐",
+    "target": "The man and girl felt cold on the boat measuring with a ruler"
+  },
+  {
+    "emoji": "💍 📠 😊 🏙️ 🔉",
+    "target": "The office in the city sent a fax about the ring with a smile"
+  },
+  {
+    "emoji": "🦓 🚆 🌞 🤤 🧎",
+    "target": "The zebra watched the train under the sun while the person kneeled"
+  },
+  {
+    "emoji": "💵 🏋️ ✋ 😕 🔔",
+    "target": "The confused lifter held up a hand when the bell rang for money"
+  },
+  {
+    "emoji": "🦙 🐐 🦋 🗃️ 🌹",
+    "target": "The llama and goat found a rose and butterfly in the file box"
+  },
+  {
+    "emoji": "🦔 🍜 🐀 🌹 🌷",
+    "target": "The hedgehog and rat ate noodles near the rose and tulip"
+  },
+  {
+    "emoji": "🍜 🥐 🕊️ 🦉 🦈",
+    "target": "The owl and dove watched the shark eat noodles and a croissant"
+  },
+  {
+    "emoji": "🦖 🦫 🥡 🦢 🐦",
+    "target": "The dinosaur and beaver shared a takeout box with the swan"
+  },
+  {
+    "emoji": "🐀 🦎 🐛 🐣 🥡",
+    "target": "The rat lizard and bug found food in the takeout box"
+  },
+  {
+    "emoji": "🦎 🌿 🦢 🥡 🐂",
+    "target": "The lizard and ox ate herbs and takeout near the swan"
+  },
+  {
+    "emoji": "🦘 🥡 🧰 ✖️ 🦇",
+    "target": "The kangaroo put the takeout and bat in the toolbox"
+  },
+  {
+    "emoji": "🦎 🌹 🍺 🦢 🦙",
+    "target": "The lizard and llama drank beer near the rose and swan"
+  },
+  {
+    "emoji": "🐦 🍺 🦖 📶 🐗",
+    "target": "The dinosaur and boar drank beer near the bird and signal"
+  },
+  {
+    "emoji": "🦈 🥐 🕸️ 🦘 🐏",
+    "target": "The shark and kangaroo found a croissant in the spider web"
+  },
+  {
+    "emoji": "🥕 🥫 🧇 📙 🍐",
+    "target": "She read the book while eating a waffle carrot and pear"
+  },
+  {
+    "emoji": "📙 🍴 🥛 🥜 🔩",
+    "target": "He read the book while eating peanuts with milk and a fork"
+  },
+  {
+    "emoji": "🥩 🍐 🧀 🌾 🏢",
+    "target": "The office worker ate meat cheese pear and rice for lunch"
+  },
+  {
+    "emoji": "🍷 🍎 🧂 🍲 🥫",
+    "target": "The cook used wine salt and an apple in the canned soup"
+  },
+  {
+    "emoji": "🥙 🍞 🥫 🍐 🍎",
+    "target": "The picnic included flatbread bread canned fruit pear and apple"
+  },
+  {
+    "emoji": "🥟 🥦 🥕 🍖 🥄",
+    "target": "She used a spoon to eat the dumpling meat broccoli and carrot"
+  },
+  {
+    "emoji": "🌾 🥚 🧁 🥔 🍋",
+    "target": "The recipe needs rice eggs potatoes lemon and a cupcake"
+  },
+  {
+    "emoji": "🧂 🧊 🍐 🍑 🥨",
+    "target": "The snack was a salted pretzel with ice pear and peach"
+  },
+  {
+    "emoji": "🥛 🧊 🥟 🥔 📙",
+    "target": "He read the book while eating dumplings potatoes and iced milk"
+  },
+  {
+    "emoji": "🍲 🥩 🥔 🥄 🧊",
+    "target": "She ate the hot meat and potato stew with a spoon and ice water"
+  },
+  {
+    "emoji": "💤 🥗 📍 💍 🌃",
+    "target": "She fell asleep at night after eating salad and finding the ring"
+  },
+  {
+    "emoji": "💣 🎷 👹 🔑 🏝️",
+    "target": "The ogre on the island played the sax and held the key and bomb"
+  },
+  {
+    "emoji": "❕ 🍗 🧙 6️⃣ 🧳",
+    "target": "The wizard packed six chicken legs in his luggage!"
+  },
+  {
+    "emoji": "🥯 🌘 🥁 🧅 🦻",
+    "target": "He heard the drum beat while eating a bagel and onion at night"
+  },
+  {
+    "emoji": "🤽 💃 🕳️ 🔗 🔵",
+    "target": "The dancer and water polo player found a hole linked to the blue circle"
+  },
+  {
+    "emoji": "🤺 🧿 🎇 👠 🚺",
+    "target": "The fencer with heels held a sparkler and amulet in the ladies room"
+  },
+  {
+    "emoji": "💵 ❕ 📠 🔙 🎅",
+    "target": "Santa sent a fax about the money and said go back!"
+  },
+  {
+    "emoji": "🔚 🔟 🌨️ 🏫 👰",
+    "target": "The bride left the school at the end of the ten snowy days"
+  },
+  {
+    "emoji": "💿 🎲 🥍 6️⃣ ✡️",
+    "target": "He played lacrosse and rolled a six with the star and cd"
+  },
+  {
+    "emoji": "🔚 🔤 ➗ 🚉 🦹",
+    "target": "The villain ended the math lesson at the train station"
+  },
+  {
+    "emoji": "🦌 🐦 🏙️ 👉 🤱",
+    "target": "The mother pointed at the deer and bird in the city"
+  },
+  {
+    "emoji": "🧲 🤞 🤏 🐂 🚗",
+    "target": "He crossed his fingers that the magnet would pull the ox and car"
+  },
+  {
+    "emoji": "🎅 🍾 🐗 🐱 🌿",
+    "target": "Santa opened champagne with the cat and boar in the herbs"
+  },
+  {
+    "emoji": "📼 🥡 🥟 👉 🥎",
+    "target": "He pointed at the video tape takeout dumplings and softball"
+  },
+  {
+    "emoji": "🥜 😎 📘 🐦 🦜",
+    "target": "The cool bird and parrot ate peanuts on the blue book"
+  },
+  {
+    "emoji": "🧅 🧞 🧻 👚 👈",
+    "target": "The genie pointed at the onion toilet paper and clothes"
+  },
+  {
+    "emoji": "🔬 🦬 🐃 🌘 🔷",
+    "target": "The scientist studied the bison and buffalo under the moon and diamond"
+  },
+  {
+    "emoji": "📕 🦷 🌍 1️⃣ 🗝️",
+    "target": "The first key opened the book about the world and teeth"
+  },
+  {
+    "emoji": "🦽 🗯️ 🦜 👏 🧘",
+    "target": "The parrot clapped for the person meditating in the wheelchair"
+  },
+  {
+    "emoji": "🐗 🥵 🚒 ⚖️ 🦘",
+    "target": "The hot boar and kangaroo saw the fire truck and scale"
+  }
+]

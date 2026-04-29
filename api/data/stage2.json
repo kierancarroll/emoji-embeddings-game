@@ -1,0 +1,822 @@
+[
+  {
+    "emoji": "🎵 💃",
+    "target": "She dances to the music"
+  },
+  {
+    "emoji": "❤️ 🍷",
+    "target": "She loves red wine"
+  },
+  {
+    "emoji": "🦢 🌊",
+    "target": "The swan is on the water"
+  },
+  {
+    "emoji": "😄 🎵",
+    "target": "The music makes me happy"
+  },
+  {
+    "emoji": "👞 🦶",
+    "target": "The shoe is on the foot"
+  },
+  {
+    "emoji": "🍑 😋",
+    "target": "The peach tastes delicious"
+  },
+  {
+    "emoji": "🦈 🌊",
+    "target": "The shark swims in the water"
+  },
+  {
+    "emoji": "🧹 🏠",
+    "target": "He cleans the house"
+  },
+  {
+    "emoji": "🍳 🥚",
+    "target": "I cook an egg"
+  },
+  {
+    "emoji": "🧓 🤕",
+    "target": "The old man is hurt"
+  },
+  {
+    "emoji": "🦗 🌿",
+    "target": "A cricket is in the grass"
+  },
+  {
+    "emoji": "🍺 🥨",
+    "target": "He drinks beer with a pretzel"
+  },
+  {
+    "emoji": "🤠 🐴",
+    "target": "The cowboy rides a horse"
+  },
+  {
+    "emoji": "🦟 🌼",
+    "target": "The mosquito is on the flower"
+  },
+  {
+    "emoji": "🧂 🍳",
+    "target": "The salt is in the pan"
+  },
+  {
+    "emoji": "🌧️ 🧥",
+    "target": "It rains on the coat"
+  },
+  {
+    "emoji": "👶 🥛",
+    "target": "The baby drinks milk"
+  },
+  {
+    "emoji": "🥪 🤤",
+    "target": "The sandwich looks delicious"
+  },
+  {
+    "emoji": "✈️ ☁️",
+    "target": "The plane flies in the clouds"
+  },
+  {
+    "emoji": "🦷 🤕",
+    "target": "My tooth hurts"
+  },
+  {
+    "emoji": "🧗 ⛰️",
+    "target": "He climbs the mountain"
+  },
+  {
+    "emoji": "🤧 🤒",
+    "target": "He sneezes because he is sick"
+  },
+  {
+    "emoji": "😴 🛌",
+    "target": "He sleeps in the bed"
+  },
+  {
+    "emoji": "🥶 🧣",
+    "target": "It is cold so I wear a scarf"
+  },
+  {
+    "emoji": "🦁 🦓",
+    "target": "The lion sees a zebra"
+  },
+  {
+    "emoji": "🦉 🌙",
+    "target": "The owl looks at the moon"
+  },
+  {
+    "emoji": "😷 💊",
+    "target": "He is sick and needs a pill"
+  },
+  {
+    "emoji": "🚒 🔥",
+    "target": "The fire truck fights the fire"
+  },
+  {
+    "emoji": "💍 👰",
+    "target": "The bride wears a ring"
+  },
+  {
+    "emoji": "🧼 🧴",
+    "target": "I use soap and lotion"
+  },
+  {
+    "emoji": "📕 🏫",
+    "target": "The book is for school"
+  },
+  {
+    "emoji": "🌽 🥣",
+    "target": "The corn is in the soup"
+  },
+  {
+    "emoji": "🐟 🥘",
+    "target": "The fish is in the food"
+  },
+  {
+    "emoji": "🎷 🥁",
+    "target": "He plays sax and drums"
+  },
+  {
+    "emoji": "🎨 🤚",
+    "target": "She paints with her hand"
+  },
+  {
+    "emoji": "🥎 🥅",
+    "target": "The ball hits the goal"
+  },
+  {
+    "emoji": "🌮 🧀",
+    "target": "The taco has cheese"
+  },
+  {
+    "emoji": "🏜️ ☀️",
+    "target": "The desert has a hot sun"
+  },
+  {
+    "emoji": "🚀 🌘",
+    "target": "The rocket goes to the moon"
+  },
+  {
+    "emoji": "👗 👠",
+    "target": "The dress matches the shoes"
+  },
+  {
+    "emoji": "🦇 🧛",
+    "target": "The vampire turns into a bat"
+  },
+  {
+    "emoji": "🎁 🌲",
+    "target": "The gift is under the tree"
+  },
+  {
+    "emoji": "🤳 🏞️",
+    "target": "He takes a selfie in the park"
+  },
+  {
+    "emoji": "🏃 👞",
+    "target": "He runs in his shoes"
+  },
+  {
+    "emoji": "👄 💋",
+    "target": "The lips have a kiss"
+  },
+  {
+    "emoji": "🗝️ 🔓",
+    "target": "The key unlocks the lock"
+  },
+  {
+    "emoji": "👻 🏡",
+    "target": "The ghost is in the house"
+  },
+  {
+    "emoji": "🧷 📄",
+    "target": "Pin the paper"
+  },
+  {
+    "emoji": "👃 🌼",
+    "target": "The nose smells a flower"
+  },
+  {
+    "emoji": "🐛 🍎",
+    "target": "The worm is in the apple"
+  },
+  {
+    "emoji": "🤴 ⚔️",
+    "target": "The prince has a sword"
+  },
+  {
+    "emoji": "🥗 🥒",
+    "target": "The salad has cucumbers"
+  },
+  {
+    "emoji": "🐣 🥚",
+    "target": "The chick hatches from the egg"
+  },
+  {
+    "emoji": "🧙 ✨",
+    "target": "The wizard uses magic"
+  },
+  {
+    "emoji": "🎨 🧑",
+    "target": "The artist is a person"
+  },
+  {
+    "emoji": "🌧️ 🐸",
+    "target": "The frog likes the rain"
+  },
+  {
+    "emoji": "🏋️ 💪",
+    "target": "He lifts weights to get muscle"
+  },
+  {
+    "emoji": "🚗 🗺️",
+    "target": "The car follows the map"
+  },
+  {
+    "emoji": "🤒 🏠",
+    "target": "He is sick at home"
+  },
+  {
+    "emoji": "🏊 🌊",
+    "target": "He swims in the water"
+  },
+  {
+    "emoji": "🧛 🌃",
+    "target": "The vampire wakes at night"
+  },
+  {
+    "emoji": "🥷 ⚔️",
+    "target": "The ninja uses a sword"
+  },
+  {
+    "emoji": "🦒 🌳",
+    "target": "The giraffe eats from the tree"
+  },
+  {
+    "emoji": "🥂 🍾",
+    "target": "We toast with champagne"
+  },
+  {
+    "emoji": "🤱 👶",
+    "target": "The mother feeds the baby"
+  },
+  {
+    "emoji": "🥥 🌴",
+    "target": "The coconut grows on the palm"
+  },
+  {
+    "emoji": "🧁 🥛",
+    "target": "Eat a cupcake with milk"
+  },
+  {
+    "emoji": "🕸️ 🦟",
+    "target": "The mosquito is in the web"
+  },
+  {
+    "emoji": "🐻 🐟",
+    "target": "The bear eats a fish"
+  },
+  {
+    "emoji": "🦅 🐀",
+    "target": "The eagle hunts the rat"
+  },
+  {
+    "emoji": "💍 🤵",
+    "target": "The groom wears a ring"
+  },
+  {
+    "emoji": "🧽 🧼",
+    "target": "Clean with a sponge and soap"
+  },
+  {
+    "emoji": "🧻 💩",
+    "target": "The paper is for the toilet"
+  },
+  {
+    "emoji": "🚶 🛑",
+    "target": "Stop walking now"
+  },
+  {
+    "emoji": "🤓 📖",
+    "target": "The nerd reads a book"
+  },
+  {
+    "emoji": "🎤 🎵",
+    "target": "Sing a song into the mic"
+  },
+  {
+    "emoji": "🎲 🎰",
+    "target": "Roll the dice for the game"
+  },
+  {
+    "emoji": "🥊 🤕",
+    "target": "The boxer gets hurt"
+  },
+  {
+    "emoji": "💯 📄",
+    "target": "I got a perfect score on the paper"
+  },
+  {
+    "emoji": "🕰️ 🏠",
+    "target": "The clock is in the house"
+  },
+  {
+    "emoji": "📜 🧐",
+    "target": "He reads the old scroll"
+  },
+  {
+    "emoji": "🔓 🔑",
+    "target": "Use the key to unlock"
+  },
+  {
+    "emoji": "💡 🧠",
+    "target": "The brain has a bright idea"
+  },
+  {
+    "emoji": "⛏️ ⛰️",
+    "target": "Use a pickaxe on the mountain"
+  },
+  {
+    "emoji": "🚀 🌍",
+    "target": "The rocket leaves Earth"
+  },
+  {
+    "emoji": "🔞 🛑",
+    "target": "No one under eighteen allowed"
+  },
+  {
+    "emoji": "🦽 🧓",
+    "target": "The old person uses a wheelchair"
+  },
+  {
+    "emoji": "🚺 🚹",
+    "target": "Men and women's restrooms"
+  },
+  {
+    "emoji": "🥫 🥣",
+    "target": "The soup comes from a can"
+  },
+  {
+    "emoji": "🧺 🍎",
+    "target": "The basket has apples"
+  },
+  {
+    "emoji": "🧪 🧐",
+    "target": "The scientist looks at the tube"
+  },
+  {
+    "emoji": "🧬 🔬",
+    "target": "Look at DNA with a microscope"
+  },
+  {
+    "emoji": "🥵 ☀️",
+    "target": "The sun is very hot"
+  },
+  {
+    "emoji": "🥶 🌨️",
+    "target": "It is cold and snowing"
+  },
+  {
+    "emoji": "💨 🌾",
+    "target": "The wind blows the wheat"
+  },
+  {
+    "emoji": "🦖 🦕",
+    "target": "The t-rex and sauropod"
+  },
+  {
+    "emoji": "🧟 🧠",
+    "target": "The zombie wants brains"
+  },
+  {
+    "emoji": "🧜 🦈",
+    "target": "The mermaid swims with the shark"
+  },
+  {
+    "emoji": "🧞 ✨",
+    "target": "The genie makes magic"
+  },
+  {
+    "emoji": "🧘 🔇",
+    "target": "Meditate in silence"
+  },
+  {
+    "emoji": "🍳 🍞",
+    "target": "I eat eggs and toast"
+  },
+  {
+    "emoji": "🤒 🛌",
+    "target": "He stays in bed when sick"
+  },
+  {
+    "emoji": "🌍 🗺️",
+    "target": "The map shows the whole world"
+  },
+  {
+    "emoji": "🔑 🚪",
+    "target": "Open the door with the key"
+  },
+  {
+    "emoji": "🍎 🤤",
+    "target": "The apple looks delicious"
+  },
+  {
+    "emoji": "😎 ☀️",
+    "target": "Wear sunglasses in the sun"
+  },
+  {
+    "emoji": "🏢 💼",
+    "target": "He works in the office"
+  },
+  {
+    "emoji": "🏠 🔑",
+    "target": "I have a key for my house"
+  },
+  {
+    "emoji": "🧺 🥪",
+    "target": "The basket has a sandwich"
+  },
+  {
+    "emoji": "🦒 🌿",
+    "target": "The giraffe eats the leaf"
+  },
+  {
+    "emoji": "🌟 ✨",
+    "target": "The stars sparkle in the sky"
+  },
+  {
+    "emoji": "🚗 💨",
+    "target": "The car goes very fast"
+  },
+  {
+    "emoji": "🦴 🐶",
+    "target": "The dog wants the bone"
+  },
+  {
+    "emoji": "🗣️ 👂",
+    "target": "Speak and I will listen"
+  },
+  {
+    "emoji": "🚆 🚉",
+    "target": "The train stops at the station"
+  },
+  {
+    "emoji": "🏡 🌳",
+    "target": "The house has a tree"
+  },
+  {
+    "emoji": "🥨 🧀",
+    "target": "Eat the pretzel with cheese"
+  },
+  {
+    "emoji": "🥘 🍚",
+    "target": "Serve rice with the stew"
+  },
+  {
+    "emoji": "🎓 📜",
+    "target": "She gets a diploma at graduation"
+  },
+  {
+    "emoji": "🌧️ 🏠",
+    "target": "It rains on the house"
+  },
+  {
+    "emoji": "🥣 🥄",
+    "target": "Use a spoon for the soup"
+  },
+  {
+    "emoji": "🧂 🥚",
+    "target": "Put salt on the egg"
+  },
+  {
+    "emoji": "🧙 🧹",
+    "target": "The witch rides a broom"
+  },
+  {
+    "emoji": "🎅 🌲",
+    "target": "Santa stands by the tree"
+  },
+  {
+    "emoji": "🎁 🎅",
+    "target": "Santa brings a gift"
+  },
+  {
+    "emoji": "🥡 🥢",
+    "target": "Eat Chinese food with chopsticks"
+  },
+  {
+    "emoji": "🥪 🥤",
+    "target": "I drink soda with my sandwich"
+  },
+  {
+    "emoji": "🥂 🤵",
+    "target": "The groom makes a toast"
+  },
+  {
+    "emoji": "🍺 🥜",
+    "target": "Drink beer and eat nuts"
+  },
+  {
+    "emoji": "🍷 🧀",
+    "target": "Wine goes well with cheese"
+  },
+  {
+    "emoji": "🥯 🧀",
+    "target": "Eat a bagel with cream cheese"
+  },
+  {
+    "emoji": "🐀 🧀",
+    "target": "The rat eats the cheese"
+  },
+  {
+    "emoji": "👞 🧦",
+    "target": "Wear socks with shoes"
+  },
+  {
+    "emoji": "🐺 🌲",
+    "target": "The wolf lives in the forest"
+  },
+  {
+    "emoji": "🦊 🌲",
+    "target": "The fox hides in the trees"
+  },
+  {
+    "emoji": "🥑 🥗",
+    "target": "The salad has avocado"
+  },
+  {
+    "emoji": "🥩 🍳",
+    "target": "Cook the meat in the pan"
+  },
+  {
+    "emoji": "🌽 🔥",
+    "target": "Roast the corn on the fire"
+  },
+  {
+    "emoji": "🥦 🥕",
+    "target": "Eat broccoli and carrots"
+  },
+  {
+    "emoji": "🧄 🍞",
+    "target": "Garlic bread is tasty"
+  },
+  {
+    "emoji": "🦓 🌿",
+    "target": "The zebra eats grass"
+  },
+  {
+    "emoji": "🦕 🌿",
+    "target": "The dinosaur eats leaves"
+  },
+  {
+    "emoji": "🦖 🥩",
+    "target": "The t-rex eats meat"
+  },
+  {
+    "emoji": "🐟 🌊",
+    "target": "The fish swims in the ocean"
+  },
+  {
+    "emoji": "🐗 🌲",
+    "target": "The boar runs in the woods"
+  },
+  {
+    "emoji": "🦄 ✨",
+    "target": "The unicorn has magic sparkles"
+  },
+  {
+    "emoji": "🧜 🌊",
+    "target": "The mermaid is in the water"
+  },
+  {
+    "emoji": "🧛 🍷",
+    "target": "The vampire drinks red wine"
+  },
+  {
+    "emoji": "🧗 🏞️",
+    "target": "Climb the rock in the park"
+  },
+  {
+    "emoji": "🧘 🌳",
+    "target": "Do yoga by the tree"
+  },
+  {
+    "emoji": "🍚 🥢",
+    "target": "Eat rice with chopsticks"
+  },
+  {
+    "emoji": "🧥 🌧️",
+    "target": "The coat protects from rain"
+  },
+  {
+    "emoji": "👢 🌧️",
+    "target": "Boots are for the rain"
+  },
+  {
+    "emoji": "🧢 ☀️",
+    "target": "Wear a cap in the sun"
+  },
+  {
+    "emoji": "🥄 🥣",
+    "target": "Use the spoon for the bowl"
+  },
+  {
+    "emoji": "🥣 🥛",
+    "target": "The bowl has milk"
+  },
+  {
+    "emoji": "🍾 🥂",
+    "target": "Cheers with champagne"
+  },
+  {
+    "emoji": "🥜 🍺",
+    "target": "Beer and nuts go together"
+  },
+  {
+    "emoji": "🧪 👨",
+    "target": "The scientist holds the tube"
+  },
+  {
+    "emoji": "💼 👨",
+    "target": "The business man has a bag"
+  },
+  {
+    "emoji": "🏝️ ⛵",
+    "target": "Sail to the island"
+  },
+  {
+    "emoji": "👠 👢",
+    "target": "Red heels and tall boots"
+  },
+  {
+    "emoji": "🗺️ 🧭",
+    "target": "Use a compass with the map"
+  },
+  {
+    "emoji": "🧥 🧤",
+    "target": "Wear a coat and gloves"
+  },
+  {
+    "emoji": "💣 💥",
+    "target": "The bomb makes an explosion"
+  },
+  {
+    "emoji": "🏧 💵",
+    "target": "Get cash from the machine"
+  },
+  {
+    "emoji": "🔙 🔚",
+    "target": "Go back or go to the end"
+  },
+  {
+    "emoji": "🔛 🔜",
+    "target": "Start now or soon"
+  },
+  {
+    "emoji": "🔊 🔇",
+    "target": "Turn the sound off or on"
+  },
+  {
+    "emoji": "💴 💵",
+    "target": "Exchange yen for dollars"
+  },
+  {
+    "emoji": "💶 💷",
+    "target": "Euro and pound notes"
+  },
+  {
+    "emoji": "🔑 🗝️",
+    "target": "The key fits the old lock"
+  },
+  {
+    "emoji": "🧲 🔩",
+    "target": "The magnet holds the screw"
+  },
+  {
+    "emoji": "🛌 💤",
+    "target": "Sleep in the bed"
+  },
+  {
+    "emoji": "🧉 🥤",
+    "target": "Drink mate from the cup"
+  },
+  {
+    "emoji": "🥢 🥡",
+    "target": "Use chopsticks for takeout"
+  },
+  {
+    "emoji": "🥄 🍴",
+    "target": "A spoon and fork for dinner"
+  },
+  {
+    "emoji": "🍲 🥢",
+    "target": "Eat stew with chopsticks"
+  },
+  {
+    "emoji": "🍜 🥢",
+    "target": "Ramen noodles and chopsticks"
+  },
+  {
+    "emoji": "🐛 🦋",
+    "target": "The caterpillar becomes a butterfly"
+  },
+  {
+    "emoji": "🐜 🕸️",
+    "target": "The ant is in the web"
+  },
+  {
+    "emoji": "🐃 🐂",
+    "target": "The water buffalo and ox"
+  },
+  {
+    "emoji": "🐐 🧀",
+    "target": "The goat eats cheese"
+  },
+  {
+    "emoji": "🦅 🦉",
+    "target": "The eagle and the owl"
+  },
+  {
+    "emoji": "🐦 🕊️",
+    "target": "The blue bird and the dove"
+  },
+  {
+    "emoji": "🌴 🥥",
+    "target": "Coconuts grow on the palm"
+  },
+  {
+    "emoji": "🌾 🍞",
+    "target": "Wheat makes bread"
+  },
+  {
+    "emoji": "🌷 🌹",
+    "target": "Tulips and roses are flowers"
+  },
+  {
+    "emoji": "🌗 🌘",
+    "target": "Half moon and crescent moon"
+  },
+  {
+    "emoji": "🔥 🚒",
+    "target": "The fire needs a truck"
+  },
+  {
+    "emoji": "🌊 🏄",
+    "target": "Surf on the ocean wave"
+  },
+  {
+    "emoji": "🤖 🦾",
+    "target": "The robot has a mechanical arm"
+  },
+  {
+    "emoji": "🧒 👦",
+    "target": "The child and the boy"
+  },
+  {
+    "emoji": "👧 🧑",
+    "target": "The girl and the adult"
+  },
+  {
+    "emoji": "🧕 ☪️",
+    "target": "Muslim woman and symbol"
+  },
+  {
+    "emoji": "🤵 👰",
+    "target": "The groom and the bride"
+  },
+  {
+    "emoji": "🤰 👶",
+    "target": "Pregnant mom and baby"
+  },
+  {
+    "emoji": "👼 ☁️",
+    "target": "Angel in the clouds"
+  },
+  {
+    "emoji": "🦸 🦹",
+    "target": "Hero fights the villain"
+  },
+  {
+    "emoji": "🚶 🏃",
+    "target": "Walk then run fast"
+  },
+  {
+    "emoji": "💍 💅",
+    "target": "Diamond ring on the nail"
+  },
+  {
+    "emoji": "🦵 🦶",
+    "target": "Leg and foot anatomy"
+  },
+  {
+    "emoji": "🦷 👄",
+    "target": "Tooth and mouth care"
+  },
+  {
+    "emoji": "👂 🦻",
+    "target": "Listen with your ear"
+  },
+  {
+    "emoji": "👁️ 👀",
+    "target": "Look with your eye"
+  }
+]

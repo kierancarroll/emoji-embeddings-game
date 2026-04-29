@@ -1,9 +1,57 @@
 // api/translate.js
 // Vercel Serverless Function — runs on Vercel's servers, never in the browser.
-// The GEMINI_API_KEY is stored as an env variable in the Vercel dashboard.
+// GEMINI_API_KEY is stored as an env variable in the Vercel dashboard.
 
+import stage1 from './data/stage1.json' assert { type: 'json' }
+import stage2 from './data/stage2.json' assert { type: 'json' }
+import stage3 from './data/stage3.json' assert { type: 'json' }
+import stage4 from './data/stage4.json' assert { type: 'json' }
+import stage5 from './data/stage5.json' assert { type: 'json' }
+import stage6 from './data/stage6.json' assert { type: 'json' }
+
+// ── Build lookup map: "emoji sequence" -> "target sentence" ───────
+// Covers all stages in one flat map
+const sequenceMap = {}
+for (const entry of [...stage1, ...stage2, ...stage3, ...stage4, ...stage5, ...stage6]) {
+  sequenceMap[entry.emoji] = entry.target
+}
+
+// ── Embedding API call ─────────────────────────────────────────────
+async function getEmbedding(text, apiKey) {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'models/text-embedding-004',
+        content: { parts: [{ text }] }
+      })
+    }
+  )
+
+  if (!res.ok) {
+    const err = await res.text()
+    throw new Error(`Embedding API error: ${err}`)
+  }
+
+  const data = await res.json()
+  return data.embedding.values  // float[]
+}
+
+// ── Cosine similarity (pure math, no LLM) ─────────────────────────
+function cosineSimilarity(a, b) {
+  let dot = 0, magA = 0, magB = 0
+  for (let i = 0; i < a.length; i++) {
+    dot  += a[i] * b[i]
+    magA += a[i] * a[i]
+    magB += b[i] * b[i]
+  }
+  return dot / (Math.sqrt(magA) * Math.sqrt(magB))
+}
+
+// ── Main handler ───────────────────────────────────────────────────
 export default async function handler(req, res) {
-  // Only allow POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
@@ -19,58 +67,30 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'API key not configured' })
   }
 
+  // ── Look up target sentence from dataset ─────────────────────────
+  const targetSentence = sequenceMap[emojiSequence]
+  if (!targetSentence) {
+    return res.status(404).json({ error: `No target found for sequence: ${emojiSequence}` })
+  }
+
   try {
-    // ── STEP 1: Ask Gemini for the target sentence + score ──────────
-    const prompt = `You are evaluating an emoji translation game.
+    // ── Embed both sentences in parallel ───────────────────────────
+    const [embUser, embTarget] = await Promise.all([
+      getEmbedding(userSentence, apiKey),
+      getEmbedding(targetSentence, apiKey)
+    ])
 
-Emoji sequence: ${emojiSequence}
-
-The player's translation: "${userSentence}"
-
-Your tasks:
-1. Write a natural, fluent English sentence that best captures the meaning of the emoji sequence (the "target sentence"). Be creative but grounded — the sentence should feel like something a person might actually say or think.
-2. Score the player's translation against your target sentence using semantic similarity. Consider meaning, tone, and intent — not just word overlap. Return a score from 0.0 to 1.0.
-
-Respond ONLY with valid JSON, no markdown, no explanation:
-{
-  "targetSentence": "...",
-  "score": 0.00,
-  "reasoning": "one short sentence explaining the score"
-}`
-
-    const geminiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 300 }
-        })
-      }
-    )
-
-    if (!geminiRes.ok) {
-      const err = await geminiRes.text()
-      console.error('Gemini error:', err)
-      return res.status(502).json({ error: 'Gemini API error' })
-    }
-
-    const geminiData = await geminiRes.json()
-    const rawText = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || ''
-
-    // Strip markdown fences if Gemini wraps in ```json
-    const cleaned = rawText.replace(/```json|```/g, '').trim()
-    const parsed = JSON.parse(cleaned)
+    // ── Compute cosine similarity ───────────────────────────────────
+    const score = cosineSimilarity(embUser, embTarget)
 
     return res.status(200).json({
-      targetSentence: parsed.targetSentence,
-      score: Math.min(1, Math.max(0, parseFloat(parsed.score))),
-      reasoning: parsed.reasoning || ''
+      targetSentence,
+      score: parseFloat(score.toFixed(4)),
+      // no reasoning field anymore — score is purely mathematical
     })
 
   } catch (err) {
     console.error('Handler error:', err)
-    return res.status(500).json({ error: 'Internal server error' })
+    return res.status(500).json({ error: err.message || 'Internal server error' })
   }
 }
