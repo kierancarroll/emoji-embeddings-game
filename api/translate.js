@@ -4,12 +4,11 @@
 
 async function getEmbedding(text, apiKey) {
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1/models/text-embedding-004:embedContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'models/text-embedding-004',
         content: { parts: [{ text }] }
       })
     }
@@ -22,7 +21,7 @@ async function getEmbedding(text, apiKey) {
 function cosineSimilarity(a, b) {
   let dot = 0, magA = 0, magB = 0
   for (let i = 0; i < a.length; i++) {
-    dot  += a[i] * b[i]
+    dot += a[i] * b[i]
     magA += a[i] * a[i]
     magB += b[i] * b[i]
   }
