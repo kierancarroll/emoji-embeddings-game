@@ -1,0 +1,59 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.track {
+    position: relative;
+    height: 8px;
+    background: var(--surface2);
+    border-radius: 999px;
+    overflow: visible;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 999px;
+    min-width: 4px;
+}
+
+.pass {
+    background: var(--pass);
+    box-shadow: 0 0 12px rgba(62, 255, 216, 0.4);
+}
+
+.fail {
+    background: var(--fail);
+    box-shadow: 0 0 12px rgba(255, 94, 94, 0.3);
+}
+
+.threshold {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    background: var(--lime);
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.threshLabel {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.55rem;
+    color: var(--lime);
+    font-family: var(--font-mono);
+    white-space: nowrap;
+}
+
+.ticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    color: var(--ink3);
+    padding: 0 1px;
+}

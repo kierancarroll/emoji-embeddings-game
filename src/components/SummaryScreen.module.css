@@ -1,0 +1,185 @@
+.root {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+}
+
+.inner {
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.icon {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.levelTag {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    color: var(--lime);
+    margin-bottom: 0.4rem;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+}
+
+.sub {
+    color: var(--ink2);
+    font-size: 0.85rem;
+}
+
+.rounds {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.roundRow {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    padding: 0.75rem 0.9rem;
+    text-align: left;
+    border-left-width: 3px;
+}
+
+.roundRow.pass {
+    border-left-color: var(--pass);
+}
+
+.roundRow.fail {
+    border-left-color: var(--fail);
+}
+
+.roundEmoji {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.roundMid {
+    flex: 1;
+    min-width: 0;
+}
+
+.roundUserText {
+    font-size: 0.78rem;
+    color: var(--ink2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.2rem;
+}
+
+.roundTarget {
+    font-size: 0.72rem;
+    color: var(--ink3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.roundScore {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.15rem;
+}
+
+.roundVerdict {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    color: var(--ink3);
+}
+
+.passText {
+    color: var(--pass);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.failText {
+    color: var(--fail);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.avgBox {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: var(--r-lg);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.avgLabel {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--ink3);
+}
+
+.avgVal {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    align-items: center;
+}
+
+.btnNext {
+    width: 100%;
+    background: var(--lime);
+    color: #000;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem;
+    border-radius: var(--r-md);
+    transition: transform 0.15s;
+}
+
+.btnNext:hover {
+    transform: translateY(-2px);
+}
+
+.btnHome {
+    color: var(--ink3);
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    transition: color 0.15s;
+    font-family: var(--font-mono);
+}
+
+.btnHome:hover {
+    color: var(--ink);
+}
