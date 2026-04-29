@@ -2,12 +2,15 @@
 // Vercel Serverless Function — runs on Vercel's servers, never in the browser.
 // GEMINI_API_KEY is stored as an env variable in the Vercel dashboard.
 
-import stage1 from './data/stage1.json' assert { type: 'json' }
-import stage2 from './data/stage2.json' assert { type: 'json' }
-import stage3 from './data/stage3.json' assert { type: 'json' }
-import stage4 from './data/stage4.json' assert { type: 'json' }
-import stage5 from './data/stage5.json' assert { type: 'json' }
-import stage6 from './data/stage6.json' assert { type: 'json' }
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
+
+const stage1 = require('./data/stage1.json')
+const stage2 = require('./data/stage2.json')
+const stage3 = require('./data/stage3.json')
+const stage4 = require('./data/stage4.json')
+const stage5 = require('./data/stage5.json')
+const stage6 = require('./data/stage6.json')
 
 // ── Build lookup map: "emoji sequence" -> "target sentence" ───────
 // Covers all stages in one flat map
@@ -43,7 +46,7 @@ async function getEmbedding(text, apiKey) {
 function cosineSimilarity(a, b) {
   let dot = 0, magA = 0, magB = 0
   for (let i = 0; i < a.length; i++) {
-    dot  += a[i] * b[i]
+    dot += a[i] * b[i]
     magA += a[i] * a[i]
     magB += b[i] * b[i]
   }
