@@ -5,22 +5,43 @@ import { LEVELS, PASS_THRESHOLD, ROUNDS_PER_LEVEL } from '../data/levels'
 import ScoreMeter from './ScoreMeter'
 import styles from './GameScreen.module.css'
 
+const STRATEGY_INFO = {
+  'Direct': {
+    label: 'DIRECT',
+    color: 'var(--teal)',
+    explanation: 'Each emoji directly represents its literal meaning. These are the easiest for both humans and AI to decode.',
+  },
+  'Metaphorical': {
+    label: 'METAPHORICAL',
+    color: '#f7c948',
+    explanation: 'Emojis are used figuratively — their cultural or symbolic meaning matters more than their literal one. LLMs often struggle here.',
+  },
+  'Semantic list': {
+    label: 'SEMANTIC LIST',
+    color: '#ff9f3e',
+    explanation: 'A sequence of related concepts that together hint at a broader idea. Requires understanding the relationship between elements.',
+  },
+  'Reduplication': {
+    label: 'REDUPLICATION',
+    color: '#c084fc',
+    explanation: 'The same emoji repeated to intensify meaning — like saying something louder. A common human convention that AI often misses.',
+  },
+}
+
 export default function GameScreen({ game }) {
   const {
     currentLevel, currentRound, totalScore,
     currentLevelData, currentSequence,
-    roundResults, isLoading, error,
+    roundResults, isLoading, isLoadingSequence, error,
     submitAnswer, nextRound, goHome,
   } = game
 
   const [input, setInput] = useState('')
   const textareaRef = useRef(null)
 
-  // Last result (only if it corresponds to current round)
   const lastResult = roundResults[currentRound]
   const hasResult  = !!lastResult
 
-  // Reset input when round changes
   useEffect(() => {
     setInput('')
     if (!hasResult) textareaRef.current?.focus()
@@ -40,15 +61,33 @@ export default function GameScreen({ game }) {
   }
 
   const progress = ((currentLevel - 1) / LEVELS.length) +
-                   ((currentRound) / (ROUNDS_PER_LEVEL * LEVELS.length))
+                   (currentRound / (ROUNDS_PER_LEVEL * LEVELS.length))
+
+  // Loading state while sequences are being fetched
+  if (isLoadingSequence || !currentSequence) {
+    return (
+      <div className={styles.root}>
+        <div className={styles.topBar}>
+          <button className={styles.backBtn} onClick={goHome}>←</button>
+          <div className={styles.meta}><span className={styles.metaLabel}>LVL</span><span className={styles.metaVal}>{currentLevel}</span></div>
+          <div className={styles.meta}><span className={styles.metaLabel}>Loading…</span></div>
+          <div className={styles.meta} style={{ textAlign: 'right' }}><span className={styles.metaLabel}>PTS</span><span className={styles.metaVal}>{Math.round(totalScore)}</span></div>
+        </div>
+        <div className={styles.loadingBody}>
+          <div className={styles.loadingSpinner} />
+          <span>Fetching sequences…</span>
+        </div>
+      </div>
+    )
+  }
+
+  const strategyInfo = STRATEGY_INFO[currentSequence?.strategy] || null
 
   return (
     <div className={styles.root}>
       {/* ── Top bar ── */}
       <div className={styles.topBar}>
-        <button className={styles.backBtn} onClick={goHome} title="Back to home">
-          ←
-        </button>
+        <button className={styles.backBtn} onClick={goHome} title="Back to home">←</button>
         <div className={styles.meta}>
           <span className={styles.metaLabel}>LVL</span>
           <span className={styles.metaVal}>{currentLevel}</span>
@@ -98,7 +137,7 @@ export default function GameScreen({ game }) {
           </motion.div>
         </AnimatePresence>
 
-        <p className={styles.prompt}>What sentence does this express?</p>
+        <p className={styles.prompt}>What does this emoji sequence mean?</p>
 
         {/* Input area */}
         <div className={styles.inputWrap}>
@@ -121,7 +160,7 @@ export default function GameScreen({ game }) {
               onClick={handleSubmit}
               disabled={!input.trim() || isLoading || hasResult}
             >
-              {isLoading ? <Spinner /> : 'Translate →'}
+              {isLoading ? <Spinner /> : 'Submit →'}
             </button>
           </div>
         </div>
@@ -133,7 +172,7 @@ export default function GameScreen({ game }) {
           </motion.div>
         )}
 
-        {/* Result card */}
+        {/* ── Result card ── */}
         <AnimatePresence>
           {hasResult && (
             <motion.div
@@ -143,26 +182,42 @@ export default function GameScreen({ game }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.35, ease: [0.4,0,0.2,1] }}
             >
-              <div className={styles.scoreRow}>
-                <div>
-                  <div className={styles.scoreLabel}>SIMILARITY SCORE</div>
+              {/* Section 1 — Score comparison */}
+              <div className={styles.scoreSection}>
+                <div className={styles.scoreCol}>
+                  <div className={styles.scoreLabel}>YOU</div>
                   <div className={`${styles.scoreNum} ${lastResult.passed ? styles.pass : styles.fail}`}>
-                    {lastResult.score.toFixed(3)}
+                    {lastResult.userScore.toFixed(3)}
+                  </div>
+                  <div className={`${styles.verdict} ${lastResult.passed ? styles.pass : styles.fail}`}>
+                    {lastResult.passed ? '✓ PASS' : '✗ FAIL'}
                   </div>
                 </div>
-                <div className={`${styles.verdict} ${lastResult.passed ? styles.pass : styles.fail}`}>
-                  {lastResult.passed ? '✓ PASS' : '✗ FAIL'}
+                <div className={styles.vsLabel}>VS</div>
+                <div className={styles.scoreCol}>
+                  <div className={styles.scoreLabel}>GEMINI</div>
+                  <div className={`${styles.scoreNum} ${lastResult.llmScore >= PASS_THRESHOLD ? styles.pass : styles.fail}`}>
+                    {lastResult.llmScore.toFixed(3)}
+                  </div>
+                  <div className={`${styles.verdict} ${lastResult.userBeatsLLM ? styles.pass : styles.fail}`}>
+                    {lastResult.userBeatsLLM ? '🏆 You win' : 'AI wins'}
+                  </div>
                 </div>
               </div>
 
-              <ScoreMeter score={lastResult.score} passed={lastResult.passed} />
-
-              {lastResult.reasoning && (
-                <div className={styles.reasoning}>
-                  💬 {lastResult.reasoning}
+              {/* Score meters */}
+              <div className={styles.meters}>
+                <div className={styles.meterRow}>
+                  <span className={styles.meterLabel}>You</span>
+                  <ScoreMeter score={lastResult.userScore} passed={lastResult.passed} />
                 </div>
-              )}
+                <div className={styles.meterRow}>
+                  <span className={styles.meterLabel}>AI</span>
+                  <ScoreMeter score={lastResult.llmScore} passed={lastResult.llmScore >= PASS_THRESHOLD} />
+                </div>
+              </div>
 
+              {/* Section 2 — Sentences */}
               <div className={styles.comparison}>
                 <div className={styles.compRow}>
                   <span className={styles.compLabel}>TARGET</span>
@@ -172,7 +227,46 @@ export default function GameScreen({ game }) {
                   <span className={styles.compLabel}>YOURS</span>
                   <span className={styles.compText} style={{ color: 'var(--ink2)' }}>{lastResult.userSentence}</span>
                 </div>
+                <div className={styles.compRow}>
+                  <span className={styles.compLabel}>GEMINI</span>
+                  <span className={styles.compText} style={{ color: 'var(--ink2)' }}>{lastResult.llmSentence}</span>
+                </div>
               </div>
+
+              {/* Section 3 — Educational layer */}
+              {strategyInfo && (
+                <motion.div
+                  className={styles.eduSection}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <div className={styles.eduHeader}>
+                    <span
+                      className={styles.strategyBadge}
+                      style={{ color: strategyInfo.color, borderColor: `${strategyInfo.color}44`, background: `${strategyInfo.color}11` }}
+                    >
+                      {strategyInfo.label}
+                    </span>
+                    <span className={styles.attributeBadge}>{lastResult.attribute}</span>
+                  </div>
+                  <p className={styles.eduText}>{strategyInfo.explanation}</p>
+
+                  {/* Neighbours */}
+                  {lastResult.neighbours?.length > 0 && (
+                    <div className={styles.neighbours}>
+                      <div className={styles.neighboursLabel}>
+                        Other human translations of "{lastResult.targetSentence}":
+                      </div>
+                      <div className={styles.neighboursList}>
+                        {lastResult.neighbours.slice(0, 6).map((n, i) => (
+                          <span key={i} className={styles.neighbourChip}>{n}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              )}
 
               <button className={styles.nextBtn} onClick={nextRound}>
                 {currentRound >= ROUNDS_PER_LEVEL - 1 ? 'See Summary →' : 'Next Round →'}

@@ -1,6 +1,6 @@
 // api/sequence.js
-// Returns a random {emoji, target} pair for the requested level.
-// The target sentence is only revealed AFTER scoring — never before.
+// Returns a random sequence for the requested level.
+// Includes strategy + neighbours for the educational UI layer.
 
 import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
@@ -20,7 +20,6 @@ export default async function handler(req, res) {
   }
 
   const level = parseInt(req.query.level)
-
   if (!level || level < 1 || level > 6) {
     return res.status(400).json({ error: 'level must be 1–6' })
   }
@@ -28,12 +27,11 @@ export default async function handler(req, res) {
   const data = stageData[level]
   const entry = data[Math.floor(Math.random() * data.length)]
 
-  // Only return the emoji — NOT the target yet
-  // Target is stored server-side via a session token approach below
-  // For simplicity in this version we return both but the frontend
-  // must NOT display the target until after scoring
   return res.status(200).json({
-    emoji: entry.emoji,
-    target: entry.target,  // frontend stores this, sends it back for scoring
+    emoji:      entry.emoji,
+    target:     entry.target,
+    strategy:   entry.strategy,   // Direct | Metaphorical | Semantic list | Reduplication
+    attribute:  entry.attribute,  // SIZE | TEMPERATURE | etc.
+    neighbours: entry.neighbours, // other human emoji translations of same concept
   })
 }

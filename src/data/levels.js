@@ -3,7 +3,7 @@
 // They are fetched at runtime from /api/sequence?level=N
 // which randomly samples from api/data/stageN.json
 
-export const PASS_THRESHOLD = 0.65
+export const PASS_THRESHOLD = 0.4  // Minimum score to pass a round. Adjusted for transformed scoring.
 export const ROUNDS_PER_LEVEL = 3
 
 export const LEVELS = [

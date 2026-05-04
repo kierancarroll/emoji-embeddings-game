@@ -1,402 +1,877 @@
 [
   {
-    "emoji": "✈️ 🧳 🏝️ 🏊 🥥 😴",
-    "target": "Fly with bags to island swim eat coconut and sleep"
-  },
-  {
-    "emoji": "🤵 👗 🍷 🍜 🎵 💍",
-    "target": "Man in suit and woman in dress drink wine eat noodles listen to music get engaged"
-  },
-  {
-    "emoji": "🛌 ☀️ 🧼 🦷 🥛 🍳",
-    "target": "Wake up with sun wash with soap brush teeth drink milk eat egg"
-  },
-  {
-    "emoji": "🏋️ 💪 🤸 🧼 🥤 🥗",
-    "target": "Lift weights build muscle do gymnastics wash off drink soda eat salad"
-  },
-  {
-    "emoji": "🚗 ⛰️ 🔥 🍖 🌃 😴",
-    "target": "Drive to mountain make fire cook meat at night sleep"
-  },
-  {
-    "emoji": "🚗 🏫 💼 📖 🎨 🧠",
-    "target": "Drive to school take bag read book paint art use brain"
-  },
-  {
-    "emoji": "🤢 🤒 🏩 💊 🛌 🥣",
-    "target": "Feel sick and feverish go to hospital take pill rest in bed eat soup"
-  },
-  {
-    "emoji": "🏡 🌿 🌷 🌧️ ☀️ 🍎",
-    "target": "Home garden plants flowers needs rain and sun to grow apples"
-  },
-  {
-    "emoji": "🚗 🏬 👗 👠 💵 🎁",
-    "target": "Drive to mall buy dress and shoes pay cash get gift"
-  },
-  {
-    "emoji": "🧁 🔥 🎁 🥳 🎵 🥨",
-    "target": "Cupcake with candle gift party music and snacks"
-  },
-  {
-    "emoji": "🚗 🌊 🏝️ 👚 🧊 🐟",
-    "target": "Drive to ocean island wear shirt use ice for fish"
-  },
-  {
-    "emoji": "🏠 💺 📺 🌽 🥤 😴",
-    "target": "At home sit on chair watch tv eat corn drink cup sleep"
-  },
-  {
-    "emoji": "🏙️ 🥎 🏃 🥅 🔊 💯",
-    "target": "In city play ball run to goal loud sound perfect score"
-  },
-  {
-    "emoji": "🚣 🐟 🌊 ☁️ 🥪 🍺",
-    "target": "Row boat catch fish on waves under clouds eat sandwich drink beer"
-  },
-  {
-    "emoji": "🤵 👰 💍 🏡 🥂 🧁",
-    "target": "Groom and bride exchange rings at house cheers with cake"
-  },
-  {
-    "emoji": "👞 💼 ⛰️ 🗺️ 🐻 😱",
-    "target": "Put on shoes take bag hike mountain check map see bear scream"
-  },
-  {
-    "emoji": "🏠 🧹 🧽 🧼 🧺 ✨",
-    "target": "Clean house sweep scrub with soap laundry basket sparkle"
-  },
-  {
-    "emoji": "🕰️ 🏃 🚉 🚆 🏢 💼",
-    "target": "Check time run to station catch train go to office work"
-  },
-  {
-    "emoji": "🎨 🧷 👩 📜 🏬 💸",
-    "target": "Artist pins work woman reads scroll shop pays money"
-  },
-  {
-    "emoji": "🤕 🏩 ⚕️ 🔬 🧪 🧁",
-    "target": "Head bandage hospital doctor microscope test tube treat with cupcake"
-  },
-  {
-    "emoji": "🦹 💣 🏃 ⚖️ 🔗 🏢",
-    "target": "Villain plants bomb runs away justice chains jail"
-  },
-  {
-    "emoji": "🔥 🏠 🚒 👨 🌊 🧗",
-    "target": "Fire at house truck comes man sprays water climbs ladder"
-  },
-  {
-    "emoji": "🚀 🌘 🤖 🌍 💥 🔬",
-    "target": "Rocket to moon robot looks at earth crash science"
-  },
-  {
-    "emoji": "📄 🦁 🦒 🦓 🦙 🤳",
-    "target": "Read guide see lion giraffe zebra llama take selfie"
-  },
-  {
-    "emoji": "👨 ⛏️ 🔧 🚚 🏠 💵",
-    "target": "Man uses pick and wrench truck builds house gets paid"
-  },
-  {
-    "emoji": "👩 🍳 🥚 🥛 🌾 🍞",
-    "target": "Woman cooks egg and milk with grain to make bread"
-  },
-  {
-    "emoji": "🎷 🥁 🎤 🎵 🧑 🍺",
-    "target": "Saxophone drum microphone music person drinks beer"
-  },
-  {
-    "emoji": "🏃 🛑 🕰️ 😅 🥤 💯",
-    "target": "Run stop check time sweat drink water finish"
-  },
-  {
-    "emoji": "👶 🥛 😭 🎁 🛌 💤",
-    "target": "Baby drinks milk cries gets toy bed sleep"
-  },
-  {
-    "emoji": "👦 👧 🤝 💋 💍 🏡",
-    "target": "Boy and girl meet kiss get ring live in house"
-  },
-  {
-    "emoji": "🦹 🏦 💣 💸 🔉 🏃",
-    "target": "Robber at bank bomb money alarm runs"
-  },
-  {
-    "emoji": "👨 🚚 🐮 🐣 🌽 🥕",
-    "target": "Farmer truck cow chick corn carrot"
-  },
-  {
-    "emoji": "🚶 🏫 🤫 📖 👀 💡",
-    "target": "Walk to school quiet read book look idea"
-  },
-  {
-    "emoji": "🌧️ 🧥 🏠 🥛 📖 💺",
-    "target": "Rain wear coat inside house milk book chair"
-  },
-  {
-    "emoji": "🗻 🧊 🧗 🧤 🧣 🤕",
-    "target": "Mountain ice climb gloves scarf hurt"
-  },
-  {
-    "emoji": "🧞 🍶 ✨ 💵 🏠 👰",
-    "target": "Genie from bottle magic money house bride"
-  },
-  {
-    "emoji": "📜 🚪 🚶 🏣 🚚 🏠",
-    "target": "Letter under door walk to post office truck to house"
-  },
-  {
-    "emoji": "😬 🦷 ⚕️ 🧪 😢 🧁",
-    "target": "Pain tooth doctor test cry treat"
-  },
-  {
-    "emoji": "🧺 🥪 🍎 🐜 😱 🏃",
-    "target": "Basket sandwich apple ant scream run"
-  },
-  {
-    "emoji": "🧙 🧢 🐀 🕊️ ✨ 😮",
-    "target": "Wizard hat rat dove magic surprise"
-  },
-  {
-    "emoji": "⚖️ 🤵 🔧 🗣️ 😡 🏢",
-    "target": "Court suit fix speak angry jail"
-  },
-  {
-    "emoji": "🦁 🧴 🌊 👨 🧣 😎",
-    "target": "Lion lotion water man towel cool"
-  },
-  {
-    "emoji": "🎅 🌲 🎁 🌨️ 🦌 🥨",
-    "target": "Santa tree gift snow deer snack"
-  },
-  {
-    "emoji": "🧟 🧠 😱 🏃 🏠 ⛏️",
-    "target": "Zombie wants brain scream run into house use pickaxe"
-  },
-  {
-    "emoji": "👩 👀 🧪 🔬 💥 😱",
-    "target": "Woman look test tube microscope boom scream"
-  },
-  {
-    "emoji": "🤳 🏞️ ☀️ 👨 📜 💵",
-    "target": "Selfie park sun man paper money"
-  },
-  {
-    "emoji": "🏃 🧼 🌊 🧴 🧕 🛌",
-    "target": "Exercise soap water lotion towel bed"
-  },
-  {
-    "emoji": "🕰️ 📄 🧠 💸 😠 😱",
-    "target": "Time paper brain money angry scream"
-  },
-  {
-    "emoji": "☀️ 🥵 🧊 😋 🥶 🦷",
-    "target": "Sun hot ice yum cold tooth"
-  },
-  {
-    "emoji": "📠 📄 🕰️ 🥛 😠 🏠",
-    "target": "Fax document time drink angry home"
-  },
-  {
-    "emoji": "🐦 👀 🐛 🌿 😋 🌳",
-    "target": "Bird sees worm on leaf eats it in tree"
-  },
-  {
-    "emoji": "👨 🦮 🚶 🌳 🌷 👃",
-    "target": "Blind man with guide dog walks in nature smelling flowers"
-  },
-  {
-    "emoji": "🤰 👶 🥛 🎁 👪 ❤️",
-    "target": "Pregnant mom feeds baby milk receives gift family love"
-  },
-  {
-    "emoji": "🥶 🔥 🥃 🧣 🧤 😊",
-    "target": "Freezing cold fire drink whiskey scarf gloves happy"
-  },
-  {
-    "emoji": "🤠 🐴 🏜️ ☀️ 🦎 🥃",
-    "target": "Cowboy on horse in desert sun sees lizard drinks whiskey"
-  },
-  {
-    "emoji": "🦉 🌃 🌲 🐀 👀 🦅",
-    "target": "Owl at night in tree sees rat with eyes eagle hunts"
-  },
-  {
-    "emoji": "🧳 🚆 ⛰️ 🤳 😎 🏠",
-    "target": "Pack bags take train to mountain selfie cool house"
-  },
-  {
-    "emoji": "🧜 🐟 🌊 🍴 🤴 ❤️",
-    "target": "Mermaid swims with fish in ocean eats with fork meets prince love"
-  },
-  {
-    "emoji": "👠 💋 💃 🍷 🌃 🚗",
-    "target": "High heels kiss dancer wine night drive car"
-  },
-  {
-    "emoji": "🎓 📜 🥳 🏫 👨 👩",
-    "target": "Graduate with diploma party at school dad and mom"
-  },
-  {
-    "emoji": "👨 🔧 🚗 🔩 🛢️ 🧰",
-    "target": "Mechanic uses wrench on car screw oil drum toolbox"
-  },
-  {
-    "emoji": "🏌️ ☁️ 🥅 🥤 🥪 😄",
-    "target": "Golfer under clouds hits net drinks soda eats sandwich happy"
-  },
-  {
-    "emoji": "🗝️ 🚪 🥡 🚚 🏠 🛌",
-    "target": "Key opens door takeout food truck house sleep in bed"
-  },
-  {
-    "emoji": "🕰️ 📖 🤓 💡 🗒️ 🎓",
-    "target": "Time to read student has idea notes for graduation"
-  },
-  {
-    "emoji": "🤢 🤮 🧻 🛌 🤒 💊",
-    "target": "Sick vomit use toilet paper rest in bed fever pill"
-  },
-  {
-    "emoji": "🌨️ 🥶 🧣 🧤 🔥 🏠",
-    "target": "Snow cold wear scarf gloves by fire house"
-  },
-  {
-    "emoji": "👨 🍳 🥘 🧂 🥣 😋",
-    "target": "Man cooks in pan adds salt to bowl yum"
-  },
-  {
-    "emoji": "👨 🚒 🔥 🌊 🐱 🏩",
-    "target": "Fireman in truck fights fire with water saves cat hospital"
-  },
-  {
-    "emoji": "🏄 🌊 ☀️ 🦈 😱 🏊",
-    "target": "Surfer on wave sun sees shark scream swim away"
-  },
-  {
-    "emoji": "✈️ 💺 🥤 ☁️ 🧳 😴",
-    "target": "Fly plane sit in seat drink soda clouds luggage sleep"
-  },
-  {
-    "emoji": "🌲 🔥 🌃 🦉 👀 😴",
-    "target": "Forest fire at night owl watches with eyes sleep"
-  },
-  {
-    "emoji": "📻 🎵 💃 🍺 🔊 🤩",
-    "target": "Radio plays music dance drink beer loud sound star"
-  },
-  {
-    "emoji": "🧀 🍷 🥖 🍎 😋 🌳",
-    "target": "Cheese and wine with baguette apple yum under tree"
-  },
-  {
-    "emoji": "🐛 🕸️ 😱 🧹 🏃 🏠",
-    "target": "Caterpillar on web scream broom run house"
-  },
-  {
-    "emoji": "🏃 🧼 🧴 🧻 👚 👗",
-    "target": "Exercise run wash with soap lotion toilet paper shirt dress"
-  },
-  {
-    "emoji": "🌮 🥑 🌽 🥤 🥣 😋",
-    "target": "Taco avocado corn drink bowl yum"
-  },
-  {
-    "emoji": "🧊 🥅 🤕 🏩 💊 🛌",
-    "target": "Ice hockey net injury hospital pill bed"
-  },
-  {
-    "emoji": "🌳 🌧️ ☀️ 🌿 🌷 🦋",
-    "target": "Tree needs rain and sun plants flower butterfly"
-  },
-  {
-    "emoji": "🚶 🏫 💼 📖 🍎 👩",
-    "target": "Walk to school carry bag read book eat apple woman"
-  },
-  {
-    "emoji": "⛏️ 🔧 🏠 🔩 🚚 👨",
-    "target": "Pickaxe and wrench fix house screw truck man"
-  },
-  {
-    "emoji": "🦹 💣 🏦 💵 🔊 🏃",
-    "target": "Villain with bomb rob bank money loud sound run"
-  },
-  {
-    "emoji": "🚣 🐟 🌊 🥪 🔥 🍳",
-    "target": "Row boat catch fish wave eat sandwich fire pan"
-  },
-  {
-    "emoji": "📜 ❤️ 💍 🤝 🏡 🔔",
-    "target": "Scroll of love ring handshake home bell"
-  },
-  {
-    "emoji": "🏋️ 😅 💪 🧼 🥤 🥗",
-    "target": "Weightlifter sweat muscle soap drink salad"
-  },
-  {
-    "emoji": "🧟 🧠 🏠 😱 ⛏️ 🦴",
-    "target": "Zombie wants brain house scream pickaxe bone"
-  },
-  {
-    "emoji": "🤳 💃 👗 👠 👄 ✨",
-    "target": "Selfie dance dress heels lips sparkle"
-  },
-  {
-    "emoji": "🏢 📠 😴 🥛 🛌 💤",
-    "target": "Office building fax machine sleep drink milk bed nap"
-  },
-  {
-    "emoji": "🤕 🏩 ⚕️ 😷 💊 🛌",
-    "target": "Injury hospital medic mask pill bed"
-  },
-  {
-    "emoji": "🚶 🌳 🥜 🦅 ☀️ 😊",
-    "target": "Walk in woods peanut for eagle sun smile"
-  },
-  {
-    "emoji": "🍞 🥚 🍳 🥛 🍎 😋",
-    "target": "Bread egg pan milk apple yum"
-  },
-  {
-    "emoji": "🥎 🧢 🏙️ 🥪 🥤 👏",
-    "target": "Softball cap city sandwich drink clap"
-  },
-  {
-    "emoji": "🌧️ 🏠 💺 📖 🥛 🐱",
-    "target": "Rain outside house sit in seat read book drink milk cat"
-  },
-  {
-    "emoji": "🦕 🦖 🔥 ☁️ 🦴 😵",
-    "target": "Dinosaur fire cloud bone dead"
-  },
-  {
-    "emoji": "🧛 🏠 🍷 🛌 🚪 🌃",
-    "target": "Vampire at home drinks wine sleeps in bed behind door at night"
-  },
-  {
-    "emoji": "🏢 💨 😷 🤧 🤒 🏩",
-    "target": "Office air pollution mask sneeze fever hospital"
-  },
-  {
-    "emoji": "🧙 🥣 🐸 ✨ 👰 🐀",
-    "target": "Wizard makes bowl potion frog magic bride rat"
-  },
-  {
-    "emoji": "🏝️ 🐟 🌊 🏊 🚣 ☀️",
-    "target": "Island fish wave swim boat sun"
-  },
-  {
-    "emoji": "🧗 ⛰️ 🐐 🦅 🤳 🥪",
-    "target": "Climb mountain goat eagle selfie sandwich"
-  },
-  {
-    "emoji": "🧙 📜 🏠 ✨ 🦉 🌃",
-    "target": "Wizard reads scroll at house magic owl night"
-  },
-  {
-    "emoji": "🧁 🍎 🥛 😋 🥯 🥐",
-    "target": "Cupcake apple milk delicious bagel croissant"
+    "emoji": "🥘🌯🌯🤑🤑💸💸",
+    "target": "big expenditure",
+    "strategy": "Metaphorical",
+    "attribute": "SIZE",
+    "neighbours": [
+      "📈💸",
+      "👨‍💻💸",
+      "💸💸",
+      "🤑💸",
+      "📈💸",
+      "🐘💵💸",
+      "🤑💸"
+    ]
+  },
+  {
+    "emoji": "👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦",
+    "target": "big group",
+    "strategy": "Reduplication",
+    "attribute": "SIZE",
+    "neighbours": [
+      "🧑‍🤝‍🧑👫👭👬",
+      "👬👬👬👬👬👬👬👬👬👬👬",
+      "👥👥👥",
+      "👫👭👨‍👨‍👧‍👧👬👨‍👨‍👧",
+      "👥👥",
+      "👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦",
+      "🧑‍🤝‍🧑🧑‍🤝‍🧑🧑‍🤝‍🧑"
+    ]
+  },
+  {
+    "emoji": "👬👬👬👬👬👬👬👬👬👬👬",
+    "target": "big group",
+    "strategy": "Reduplication",
+    "attribute": "SIZE",
+    "neighbours": [
+      "🧑‍🤝‍🧑👫👭👬",
+      "👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦👨‍👦",
+      "👥👥👥",
+      "👫👭👨‍👨‍👧‍👧👬👨‍👨‍👧",
+      "👥👥",
+      "👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦👩‍👩‍👦‍👦",
+      "🧑‍🤝‍🧑🧑‍🤝‍🧑🧑‍🤝‍🧑"
+    ]
+  },
+  {
+    "emoji": "🌇🌁🌆🏙🌃🗽",
+    "target": "big city",
+    "strategy": "Semantic list",
+    "attribute": "SIZE",
+    "neighbours": [
+      "🌇❗",
+      "🇷🇺",
+      "🏙",
+      "🌆🤯",
+      "🏙↕️↔️",
+      "🌃🌃🌃🌃🌃",
+      "🌇🏙️"
+    ]
+  },
+  {
+    "emoji": "🔥🔊🗣️🗣️🤔🤔👍👎",
+    "target": "hot topic",
+    "strategy": "Metaphorical",
+    "attribute": "EMOTIONALITY",
+    "neighbours": [
+      "🤩💬",
+      "☀️🎙🗣",
+      "🔥🔥🔥🔥📰",
+      "🔥💬",
+      "🔥🗣️",
+      "🔥🗣️",
+      "🥵💬"
+    ]
+  },
+  {
+    "emoji": "🔥👀✋🤚🙏🥺💰",
+    "target": "hot merchandise",
+    "strategy": "Metaphorical",
+    "attribute": "LEGALITY",
+    "neighbours": [
+      "🔥🔥👕🥿🕶️",
+      "🔥🎁🎁",
+      "🔥🏷",
+      "🔥🛍️🧸👕👗✏️📔",
+      "🔥📱",
+      "🗨️👕",
+      "👍🧸👕"
+    ]
+  },
+  {
+    "emoji": "🔥🛍️🧸👕👗✏️📔",
+    "target": "hot merchandise",
+    "strategy": "Direct",
+    "attribute": "LEGALITY",
+    "neighbours": [
+      "🔥👀✋🤚🙏🥺💰",
+      "🔥🔥👕🥿🕶️",
+      "🔥🎁🎁",
+      "🔥🏷",
+      "🔥📱",
+      "🗨️👕",
+      "👍🧸👕"
+    ]
+  },
+  {
+    "emoji": "🔥🗣️✖️🗣️✔️📢",
+    "target": "hot argument",
+    "strategy": "Direct",
+    "attribute": "EMOTIONALITY",
+    "neighbours": [
+      "🙅🙅‍♂️😤🗯️",
+      "😡🤬🗣",
+      "🤬🗣📣",
+      "🤬💬😡",
+      "🔥🤬",
+      "💢🗣️",
+      "🤬💬"
+    ]
+  },
+  {
+    "emoji": "☀️, 🤒🌡️😷😴🥶",
+    "target": "hot forehead",
+    "strategy": "Metaphorical",
+    "attribute": "TEMPERATURE",
+    "neighbours": [
+      "🥴🤒👨‍⚕️",
+      "🔥🤒🌡",
+      "🥵🤒🤒",
+      "🌡️🤒",
+      "♨️🤯",
+      "🩺🤒",
+      "🤒🤕"
+    ]
+  },
+  {
+    "emoji": "🤔❓📝💡✏️✔️",
+    "target": "right answer",
+    "strategy": "Metaphorical",
+    "attribute": "CORRECTNESS",
+    "neighbours": [
+      "✔️",
+      "✔️📄✍️",
+      "➡️✍️✅",
+      "✅📝",
+      "💯",
+      "✅",
+      "🙋‍♀️👍✅"
+    ]
+  },
+  {
+    "emoji": "↔️🏝️🍾💆🧖🧘",
+    "target": "short holiday",
+    "strategy": "Metaphorical",
+    "attribute": "DURATION",
+    "neighbours": [
+      "🩳🏖",
+      "🥲🤏✈️⛩️",
+      "⏳🏖️✈️🧳",
+      "⌛🏖",
+      "🤏🏖️",
+      "🤏🧳🛄",
+      "🛫🛬"
+    ]
+  },
+  {
+    "emoji": "🚫🔜🇺🇸🇨🇵🇨🇮🇦🇨🇦🇽",
+    "target": "far country",
+    "strategy": "Direct",
+    "attribute": "DISTANCE",
+    "neighbours": [
+      "🌎↔️🌏",
+      "🧳🛫🕧",
+      "😵‍💫🇦🇽",
+      "🗺↔️",
+      "🗺️🛳️🛫",
+      "🌎⤴️↗️"
+    ]
+  },
+  {
+    "emoji": "🦠💣🦹‍♂️🦠🦹💣🦠",
+    "target": "dirty job",
+    "strategy": "Metaphorical",
+    "attribute": "CLEANNESS",
+    "neighbours": [
+      "👎📝",
+      "💩🧹",
+      "🪠🚽🧹",
+      "🤮🤢👷‍♂️",
+      "💩💼",
+      "🤢🧳",
+      "🚽👷🛠️"
+    ]
+  },
+  {
+    "emoji": "🪠🚽🧹💰👵👴",
+    "target": "dirty work",
+    "strategy": "Metaphorical",
+    "attribute": "CLEANNESS",
+    "neighbours": [
+      "👎📝",
+      "🚔📃",
+      "🦠💼",
+      "🤮🛠",
+      "💩⛑️💼",
+      "😒🧳",
+      "🚽👷🛠️"
+    ]
+  },
+  {
+    "emoji": "😈💵💵🚫👉👮",
+    "target": "dirty money",
+    "strategy": "Metaphorical",
+    "attribute": "LEGALITY",
+    "neighbours": [
+      "👎💰",
+      "🤑💸🦹",
+      "🦠🤐🤑💸🦠",
+      "🤮💵",
+      "💩💵💰",
+      "😒💰",
+      "🚓🛑💵💵💵"
+    ]
+  },
+  {
+    "emoji": "👥💉🩺🩹🩸🧑‍⚕️👥",
+    "target": "common procedure",
+    "strategy": "Metaphorical",
+    "attribute": "COMMONNESS",
+    "neighbours": [
+      "🖥",
+      "😬📋1️⃣2️⃣3️⃣",
+      "👥🔃",
+      "▶️🪜",
+      "🤲✍️",
+      "🪛🔧🤝",
+      "🔄🧑‍⚕️💉"
+    ]
+  },
+  {
+    "emoji": "🌎🇦🇽🇮🇴🇻🇬🇧🇶🇧🇶🇰🇾",
+    "target": "common land",
+    "strategy": "Semantic list",
+    "attribute": "COMMONALITY",
+    "neighbours": [
+      "🏞",
+      "🌆🏙️🌉🏝️",
+      "👥⛰",
+      "▶️🧱",
+      "🤲🌆",
+      "🤝🏝️",
+      "👥🏝️🙌👥"
+    ]
+  },
+  {
+    "emoji": "🏘️🏘️🏘️🪰🪰🪰🪰🪰",
+    "target": "common housefly",
+    "strategy": "Reduplication",
+    "attribute": "COMMONNESS",
+    "neighbours": [
+      "🪰",
+      "🪰😐",
+      "👥🪰",
+      "🤲🪰",
+      "🪰",
+      "👥👥🪰",
+      "🏠🪰"
+    ]
+  },
+  {
+    "emoji": "👥🧳👛💼🎒👜👥",
+    "target": "common brand",
+    "strategy": "Metaphorical",
+    "attribute": "COMMONNESS",
+    "neighbours": [
+      "👜",
+      "👓👝👗👔©️",
+      "👥💁🏻‍♀️👜",
+      "▶️🛒👛",
+      "🤲📱",
+      "↘️↙️",
+      "🛍️🛍️🔄"
+    ]
+  },
+  {
+    "emoji": "🏋🏻🛠️⚓🔗🔩⚔",
+    "target": "heavy metal",
+    "strategy": "Direct",
+    "attribute": "WEIGHT",
+    "neighbours": [
+      "🤘",
+      "🏋⚙️",
+      "⚖️🔗",
+      "⚒️⛓️",
+      "😓🪨",
+      "⚖️⚙️"
+    ]
+  },
+  {
+    "emoji": "📦📦📦📦📦📦📦📦📦✖️💯",
+    "target": "heavy load",
+    "strategy": "Reduplication",
+    "attribute": "WEIGHT",
+    "neighbours": [
+      "🏋🎒",
+      "🏋️‍♂️📦",
+      "🏋🏻🚜🧳",
+      "💥🏋",
+      "😓📦",
+      "💪👛"
+    ]
+  },
+  {
+    "emoji": "🎫🧑👨🧑‍🦱👩‍🦱🈵",
+    "target": "full auditorium",
+    "strategy": "Metaphorical",
+    "attribute": "FULLNESS",
+    "neighbours": [
+      "🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🕍",
+      "👩‍💻👨‍💻🏫",
+      "❌🛸🏟",
+      "🈵🏫",
+      "⛽️🏫",
+      "🎟️🎟️🎭"
+    ]
+  },
+  {
+    "emoji": "🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️🕍",
+    "target": "full auditorium",
+    "strategy": "Reduplication",
+    "attribute": "FULLNESS",
+    "neighbours": [
+      "🎫🧑👨🧑‍🦱👩‍🦱🈵",
+      "👩‍💻👨‍💻🏫",
+      "❌🛸🏟",
+      "🈵🏫",
+      "⛽️🏫",
+      "🎟️🎟️🎭"
+    ]
+  },
+  {
+    "emoji": "🥛➕🚰🚰🚰🚰🚰 🈵",
+    "target": "full glass",
+    "strategy": "Metaphorical",
+    "attribute": "FULLNESS",
+    "neighbours": [
+      "🥛🈵",
+      "💯🥛",
+      "🚰🥛",
+      "🚰✅",
+      "🍺",
+      "🥛🥂"
+    ]
+  },
+  {
+    "emoji": "♥️👨‍👩‍👧‍👦💼💰💰💰💯",
+    "target": "full life",
+    "strategy": "Metaphorical",
+    "attribute": "FULLNESS",
+    "neighbours": [
+      "🎑🏔️🌄",
+      "🥰☺️🏡",
+      "🎉😊😌🤗🥳🤩",
+      "😊♥️",
+      "🥵🤣🥵🤣",
+      "😆🥳💑"
+    ]
+  },
+  {
+    "emoji": "🎉😊😌🤗🥳🤩",
+    "target": "full life",
+    "strategy": "Metaphorical",
+    "attribute": "FULLNESS",
+    "neighbours": [
+      "♥️👨‍👩‍👧‍👦💼💰💰💰💯",
+      "🎑🏔️🌄",
+      "🥰☺️🏡",
+      "😊♥️",
+      "🥵🤣🥵🤣",
+      "😆🥳💑"
+    ]
+  },
+  {
+    "emoji": "🍏🍎🍐🍊🥔🍠🥐🥯🍞🫓🍑🥥🥝",
+    "target": "ample food",
+    "strategy": "Semantic list",
+    "attribute": "QUANTITY",
+    "neighbours": [
+      "🍔🌭🌮😊",
+      "👩‍👩‍👧‍👧👨‍👨‍👧‍👧👨‍👩‍👧‍👧🍽️💯",
+      "🍙🍚🍘🍜",
+      "🥖🥞🥫🍛🍲",
+      "👌🏻🍽🍎",
+      "🍔🌭🌮🌯🥪🍕",
+      "👐😋"
+    ]
+  },
+  {
+    "emoji": "🍔🌭🌮🌯🥪🍕",
+    "target": "ample food",
+    "strategy": "Semantic list",
+    "attribute": "QUANTITY",
+    "neighbours": [
+      "🍔🌭🌮😊",
+      "👩‍👩‍👧‍👧👨‍👨‍👧‍👧👨‍👩‍👧‍👧🍽️💯",
+      "🍙🍚🍘🍜",
+      "🥖🥞🥫🍛🍲",
+      "👌🏻🍽🍎",
+      "🍏🍎🍐🍊🥔🍠🥐🥯🍞🫓🍑🥥🥝",
+      "👐😋"
+    ]
+  },
+  {
+    "emoji": "🍏🍌🥐🌮🥪🥨🧀🥚🥞🥬🌶️🍢🧋🌰🍪🎂🥂🍨",
+    "target": "ample supply",
+    "strategy": "Semantic list",
+    "attribute": "SUFFICIENCY",
+    "neighbours": [
+      "😊📈",
+      "👩‍👩‍👧‍👧👨‍👨‍👧‍👧👨‍👩‍👧‍👧📈",
+      "📉📋✅",
+      "🍽✅️",
+      "👌🏻🔒",
+      "🙆🏻‍♀️📦",
+      "👐📈"
+    ]
+  },
+  {
+    "emoji": "💸🏦💵🪙💰💹🏧💲💳🤑",
+    "target": "ample waistline",
+    "strategy": "Metaphorical",
+    "attribute": "SIZE",
+    "neighbours": [
+      "😊",
+      "🤰📈",
+      "📏👖",
+      "🍴🍴🍝🎅",
+      "🤌🏻👗",
+      "🙆🏻‍♀️🩳",
+      "👐🤰"
+    ]
+  },
+  {
+    "emoji": "❓️❓️❓️❓️",
+    "target": "puzzling statement",
+    "strategy": "Reduplication",
+    "attribute": "CLARITY",
+    "neighbours": [
+      "😵‍💫🤔",
+      "💬❓❓😵‍💫",
+      "🗣️❓⁉️🤔🤷",
+      "🧐❓",
+      "⁉️⁉️❓❔🤷‍♀️🤷🤷‍♂️",
+      "😵‍💫🤨❓",
+      "🤷‍♀️🗣️"
+    ]
+  },
+  {
+    "emoji": "⁉️⁉️❓❔🤷‍♀️🤷🤷‍♂️",
+    "target": "puzzling statement",
+    "strategy": "Metaphorical",
+    "attribute": "CLARITY",
+    "neighbours": [
+      "😵‍💫🤔",
+      "💬❓❓😵‍💫",
+      "🗣️❓⁉️🤔🤷",
+      "❓️❓️❓️❓️",
+      "🧐❓",
+      "😵‍💫🤨❓",
+      "🤷‍♀️🗣️"
+    ]
+  },
+  {
+    "emoji": "🤕🧑‍⚕️💊😷🦠🪦",
+    "target": "critical illness",
+    "strategy": "Metaphorical",
+    "attribute": "CRISIS",
+    "neighbours": [
+      "😷🤒🤕",
+      "☠️🤧",
+      "🤮👨‍⚕️",
+      "🤒🚨",
+      "🤒‼️",
+      "🤢🤢",
+      "🤮🤒🌡️🌡️"
+    ]
+  },
+  {
+    "emoji": "❗🥑🍎🧀🍚❗😥",
+    "target": "critical shortage",
+    "strategy": "Metaphorical",
+    "attribute": "CRISIS",
+    "neighbours": [
+      "❌❓⚠️⚠️",
+      "❌🍞☠️",
+      "❌🍱 ❌ 🍼",
+      "‼️🦐🦑🍞🥝",
+      "🚨📉",
+      "🤏🍞",
+      "⌛❌🧺"
+    ]
+  },
+  {
+    "emoji": "💨💨💨😤🌋🚬😤",
+    "target": "thick smoke",
+    "strategy": "Metaphorical",
+    "attribute": "THICKNESS",
+    "neighbours": [
+      "🌋💨",
+      "💨👁️❌",
+      "💨🚬",
+      "🌋🌋🌋😷",
+      "💨💨🌫️🌫️",
+      "🔥💨💨💨💨",
+      "💨"
+    ]
+  },
+  {
+    "emoji": "🍦🥫🍦🍦🍦🍦",
+    "target": "thick cream",
+    "strategy": "Semantic list",
+    "attribute": "THICKNESS",
+    "neighbours": [
+      "🍦🍦🍦",
+      "🍨🍦",
+      "🧁",
+      "🧴💪",
+      "🍶🍶",
+      "📏🍦🍦",
+      "🍦"
+    ]
+  },
+  {
+    "emoji": "📏🌫️🌫️🌫️🌁🌁",
+    "target": "thick fog",
+    "strategy": "Semantic list",
+    "attribute": "THICKNESS",
+    "neighbours": [
+      "🌫️🌫️🌫️",
+      "✈️🙈",
+      "💨👁️🌫️",
+      "🌫️🌫️🌁",
+      "🌫️🌫️🌫️",
+      "🌫️🌫️",
+      "🌫😶‍🌫️"
+    ]
+  },
+  {
+    "emoji": "🙅‍♂️😈🤫✍️📄📚💯",
+    "target": "wrong cheating",
+    "strategy": "Metaphorical",
+    "attribute": "RIGHTNESS",
+    "neighbours": [
+      "❌👩‍💻",
+      "❌📑",
+      "🙅‍♀️💔",
+      "🙅👩‍❤️‍💋‍👨💔",
+      "👎📝",
+      "❌📝📋",
+      "😏👎"
+    ]
+  },
+  {
+    "emoji": "♨️🦶🦵👃👂🖐",
+    "target": "warm body",
+    "strategy": "Semantic list",
+    "attribute": "TEMPERATURE",
+    "neighbours": [
+      "🌡🧍‍♂️",
+      "🎥💁‍♀️❤️🧟‍♂️",
+      "🤒",
+      "🤒",
+      "🥵",
+      "🔥🧖‍♂️",
+      "🌡️🧍"
+    ]
+  },
+  {
+    "emoji": "🤔❔👨‍🏫🗣️💡✅😀",
+    "target": "clear explanation",
+    "strategy": "Metaphorical",
+    "attribute": "CLARITY",
+    "neighbours": [
+      "🔎🗣",
+      "✔️🗣️",
+      "💬😲🆗",
+      "👩‍🏫💯🗣️",
+      "🗣️💡",
+      "👍🏻🗣"
+    ]
+  },
+  {
+    "emoji": "💧💧🔬✨❌🦠",
+    "target": "clear water",
+    "strategy": "Metaphorical",
+    "attribute": "CLEARNESS",
+    "neighbours": [
+      "🔎💦",
+      "✔️💧",
+      "💧💧✨",
+      "👍💦💧",
+      "✔️💧",
+      "💧⚪️"
+    ]
+  },
+  {
+    "emoji": "👨‍🏫🗣️📝❓❓❓",
+    "target": "unclear action",
+    "strategy": "Metaphorical",
+    "attribute": "CLARITY",
+    "neighbours": [
+      "🤔🏃‍♀️",
+      "❌♟️",
+      "🤨🧐🤷‍♀️🤷‍♂️",
+      "❓❓❓",
+      "🕺🤔",
+      "❓🤨"
+    ]
+  },
+  {
+    "emoji": "🔝🤞🙏🌠💫🍀🤗",
+    "target": "high hope",
+    "strategy": "Metaphorical",
+    "attribute": "DEGREE",
+    "neighbours": [
+      "😇🙏",
+      "🔝✡️",
+      "⬆️☺️",
+      "⬆️😇🤞",
+      "⬆️🙏",
+      "🪜🙏🏼",
+      "🙏😌👆"
+    ]
+  },
+  {
+    "emoji": "🥶🧤🧣🌬️🧥🏠",
+    "target": "cool room",
+    "strategy": "Metaphorical",
+    "attribute": "TEMPERATURE",
+    "neighbours": [
+      "🧊🏠",
+      "🆒🛋️",
+      "🌡️🥶🏠",
+      "🆒🏠",
+      "❄️💨🏠",
+      "🧊🏤",
+      "💨🛌"
+    ]
+  },
+  {
+    "emoji": "🏡🥰👪👩‍👩‍👦👨‍👨‍👦👨‍👧👩‍👦",
+    "target": "domestic happiness",
+    "strategy": "Direct",
+    "attribute": "DOMESTICITY",
+    "neighbours": [
+      "🏡🫂😊🏡",
+      "🏠😄",
+      "🏠🥰",
+      "🏠😃",
+      "👧😁😂",
+      "🏡🥰🍼👶💰",
+      "😀😃😄"
+    ]
+  },
+  {
+    "emoji": "🏠😭🧹🗑️🧽🍽️🍽️",
+    "target": "domestic chore",
+    "strategy": "Metaphorical",
+    "attribute": "DOMESTICITY",
+    "neighbours": [
+      "🧹🍳🪠🛒🏠",
+      "🏠⌨️",
+      "🏠🧹",
+      "🧹🧼🧴😷",
+      "🏠🧹",
+      "😤🧹🧽🗑️",
+      "🏠🧹"
+    ]
+  },
+  {
+    "emoji": "🏠🐄🐐🦮🐔🏠",
+    "target": "domestic animal",
+    "strategy": "Semantic list",
+    "attribute": "TAMENESS",
+    "neighbours": [
+      "🏠🐕",
+      "🏠🐶🐱🐰🐹🐭",
+      "😺🐶",
+      "🏠🐶🐱",
+      "🐶🐱🐰",
+      "🏠🐶🐱😍",
+      "🏠🦮"
+    ]
+  },
+  {
+    "emoji": "🏠🐶🐱🐰🐹🐭",
+    "target": "domestic animal",
+    "strategy": "Semantic list",
+    "attribute": "TAMENESS",
+    "neighbours": [
+      "🏠🐄🐐🦮🐔🏠",
+      "🏠🐕",
+      "😺🐶",
+      "🏠🐶🐱",
+      "🐶🐱🐰",
+      "🏠🐶🐱😍",
+      "🏠🦮"
+    ]
+  },
+  {
+    "emoji": "🏰👑👎👎👎👬👭😡",
+    "target": "ineffectual ruler",
+    "strategy": "Metaphorical",
+    "attribute": "POTENCY",
+    "neighbours": [
+      "🤴👑📉👎",
+      "👎📏",
+      "👎🤴👸",
+      "🧑‍💻👩‍💻👨‍💻👎👎",
+      "❌🤴",
+      "😡👮",
+      "👑🙅"
+    ]
+  },
+  {
+    "emoji": "🤓🐶🦊🐻🦑🌳🐳🤓",
+    "target": "intelligent life",
+    "strategy": "Semantic list",
+    "attribute": "INTELLIGENCE",
+    "neighbours": [
+      "👍👨‍🏫",
+      "🧍🧍‍♀️🧍‍♂️",
+      "🧑‍🎓🤓",
+      "🎓👽",
+      "🤖🐾",
+      "👨‍🔬🔬🧫🦠🧠🧠",
+      "🤔🤷‍♀️"
+    ]
+  },
+  {
+    "emoji": "👨‍🔬🔬🧫🦠🧠🧠",
+    "target": "intelligent life",
+    "strategy": "Semantic list",
+    "attribute": "INTELLIGENCE",
+    "neighbours": [
+      "👍👨‍🏫",
+      "🧍🧍‍♀️🧍‍♂️",
+      "🧑‍🎓🤓",
+      "🎓👽",
+      "🤖🐾",
+      "🤓🐶🦊🐻🦑🌳🐳🤓",
+      "🤔🤷‍♀️"
+    ]
+  },
+  {
+    "emoji": "👬👨‍❤️‍💋‍👨⏳⌛💞👨‍🦳👨‍🦳",
+    "target": "constant lover",
+    "strategy": "Metaphorical",
+    "attribute": "CONSTANCY",
+    "neighbours": [
+      "🙍‍♀️❤️🙍‍♂️♾️",
+      "🔂💑👩‍❤️‍👨👩‍❤️‍👩",
+      "💍👰‍♂️👰‍♀️🤵‍♂️💑",
+      "❤️🧓👵",
+      "🕰💤🫂",
+      "💘👩‍❤️‍👨🔃",
+      "💑😁"
+    ]
+  },
+  {
+    "emoji": "😟😟😟😟😟😟",
+    "target": "constant pain",
+    "strategy": "Reduplication",
+    "attribute": "CONTINUITY",
+    "neighbours": [
+      "♾️💔",
+      "🔂😖",
+      "🤕🧑‍⚕️",
+      "⏳😣🤕",
+      "🔃🤕",
+      "🦴🔨🧑‍🦽⏳😭",
+      "😥💉🤕"
+    ]
+  },
+  {
+    "emoji": "😤😤😔😔😔😥",
+    "target": "effective reprimand",
+    "strategy": "Metaphorical",
+    "attribute": "EFFICACY",
+    "neighbours": [
+      "👍🤬",
+      "😤🗣️💬",
+      "🗣️🧏‍♀️👍",
+      "👍😠😡😤",
+      "😡👍",
+      "💨🤬",
+      "👍😤"
+    ]
+  },
+  {
+    "emoji": "❓❓🇧🇱🇲🇵🇩🇬🇹🇦",
+    "target": "foreign nation",
+    "strategy": "Direct",
+    "attribute": "FOREIGNNESS",
+    "neighbours": [
+      "✈️🗺️",
+      "👽🇺🇳",
+      "🇻🇪🇲🇪🇲🇲🇺🇳",
+      "🇦🇫🇦🇽🇦🇱",
+      "✈️🏝️",
+      "🧳🇮🇴🇧🇦🇬🇾🇬🇶🎌🇬🇪",
+      "🌏🇬🇧"
+    ]
+  },
+  {
+    "emoji": "🧳🇮🇴🇧🇦🇬🇾🇬🇶🎌🇬🇪",
+    "target": "foreign nation",
+    "strategy": "Semantic list",
+    "attribute": "FOREIGNNESS",
+    "neighbours": [
+      "✈️🗺️",
+      "👽🇺🇳",
+      "🇻🇪🇲🇪🇲🇲🇺🇳",
+      "❓❓🇧🇱🇲🇵🇩🇬🇹🇦",
+      "🇦🇫🇦🇽🇦🇱",
+      "✈️🏝️",
+      "🌏🇬🇧"
+    ]
+  },
+  {
+    "emoji": "🇻🇪🇲🇪🇲🇲🌮🍱🍣",
+    "target": "exotic cuisine",
+    "strategy": "Metaphorical",
+    "attribute": "FOREIGNNESS",
+    "neighbours": [
+      "👌🍽️",
+      "👽🥘",
+      "😈🥙",
+      "🍱🥐🍕",
+      "🤯👄🥤🍞",
+      "🤔🧑‍🍳🌮",
+      "🌏🥂"
+    ]
+  },
+  {
+    "emoji": "🙋🧏‍♂️🙎‍♂️🙋‍♂️🧏🙎",
+    "target": "delicate negotiation",
+    "strategy": "Metaphorical",
+    "attribute": "DIFFICULTY",
+    "neighbours": [
+      "❕💬",
+      "⚠️📦🗣️💬",
+      "🧘🕊☮️🗣",
+      "‼️🗣️",
+      "🗣️😃",
+      "🤝🕊️☮️",
+      "🤔👥"
+    ]
+  },
+  {
+    "emoji": "🤔🧠🔊🗣️☺️👍",
+    "target": "sound explanation",
+    "strategy": "Metaphorical",
+    "attribute": "REASONABLENESS",
+    "neighbours": [
+      "🗣🧏‍♀️",
+      "👍🗣️",
+      "🗣️👂👍",
+      "🤔 🧠🗣️ 🙂🆗",
+      "🔈🗣",
+      "🧑‍🏫🗣️",
+      "🙋🧏‍♀️👍",
+      "👂🗣️"
+    ]
   }
 ]

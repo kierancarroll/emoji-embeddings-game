@@ -2,7 +2,6 @@
 import { useReducer, useCallback } from 'react'
 import { LEVELS, PASS_THRESHOLD, ROUNDS_PER_LEVEL } from '../data/levels'
 
-// ── helpers ───────────────────────────────────────────────────────
 function loadUnlocked() {
   try {
     const s = localStorage.getItem('emojilingo_v2_unlocked')
@@ -13,7 +12,6 @@ function saveUnlocked(arr) {
   localStorage.setItem('emojilingo_v2_unlocked', JSON.stringify(arr))
 }
 
-// ── initial state ─────────────────────────────────────────────────
 function init() {
   return {
     screen: 'home',
@@ -25,13 +23,10 @@ function init() {
     isLoading: false,
     isLoadingSequence: false,
     error: null,
-    // live sequences fetched from API for current level
-    // shape: [{emoji, target}, {emoji, target}, {emoji, target}]
     currentSequences: [],
   }
 }
 
-// ── reducer ───────────────────────────────────────────────────────
 function reducer(state, action) {
   switch (action.type) {
 
@@ -56,29 +51,36 @@ function reducer(state, action) {
       }
 
     case 'SEQUENCES_ERROR':
-      return {
-        ...state,
-        isLoadingSequence: false,
-        error: action.message,
-      }
+      return { ...state, isLoadingSequence: false, error: action.message }
 
     case 'SUBMIT_START':
       return { ...state, isLoading: true, error: null }
 
     case 'SUBMIT_SUCCESS': {
-      const { userSentence, targetSentence, score } = action
-      const passed = score >= PASS_THRESHOLD
-      const pointsEarned = passed
-        ? Math.round(score * 100)
-        : Math.round(score * 25)
-      const emoji = state.currentSequences[state.currentRound]?.emoji
+      const { userSentence, targetSentence, userScore, llmScore, llmSentence } = action
+      const passed = userScore >= PASS_THRESHOLD
+      const pointsEarned = passed ? Math.round(userScore * 100) : Math.round(userScore * 25)
+      const seq = state.currentSequences[state.currentRound]
 
       return {
         ...state,
         isLoading: false,
         roundResults: [
           ...state.roundResults,
-          { emoji, userSentence, targetSentence, score, passed, pointsEarned }
+          {
+            emoji:          seq?.emoji,
+            userSentence,
+            targetSentence,
+            userScore,
+            llmScore,
+            llmSentence,
+            passed,
+            pointsEarned,
+            strategy:       seq?.strategy,
+            attribute:      seq?.attribute,
+            neighbours:     seq?.neighbours || [],
+            userBeatsLLM:   userScore > llmScore,
+          }
         ],
         totalScore: state.totalScore + pointsEarned,
       }
@@ -115,14 +117,11 @@ function reducer(state, action) {
   }
 }
 
-// ── hook ──────────────────────────────────────────────────────────
 export function useGameState() {
   const [state, dispatch] = useReducer(reducer, null, init)
 
-  // Fetch 3 random sequences for the level from the API
   const fetchSequences = useCallback(async (level) => {
     try {
-      // 3 parallel requests to get 3 different random sequences
       const results = await Promise.all(
         Array.from({ length: ROUNDS_PER_LEVEL }, () =>
           fetch(`/api/sequence?level=${level}`).then(r => r.json())
@@ -152,6 +151,7 @@ export function useGameState() {
         body: JSON.stringify({
           userSentence,
           targetSentence: currentSeq.target,
+          emojiSequence:  currentSeq.emoji,
         }),
       })
 
@@ -162,7 +162,9 @@ export function useGameState() {
         type: 'SUBMIT_SUCCESS',
         userSentence,
         targetSentence: data.targetSentence,
-        score: data.score,
+        userScore:      data.userScore,
+        llmScore:       data.llmScore,
+        llmSentence:    data.llmSentence,
       })
     } catch (err) {
       dispatch({ type: 'SUBMIT_ERROR', message: err.message })
@@ -170,12 +172,11 @@ export function useGameState() {
   }, [state.currentSequences, state.currentRound])
 
   const nextRound = useCallback(() => dispatch({ type: 'NEXT_ROUND' }), [])
-  const goHome = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
-  const restart = useCallback(() => dispatch({ type: 'RESTART' }), [])
+  const goHome    = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
+  const restart   = useCallback(() => dispatch({ type: 'RESTART' }), [])
 
-  // derived
   const currentLevelData = LEVELS.find(l => l.level === state.currentLevel)
-  const currentSequence = state.currentSequences[state.currentRound]
+  const currentSequence  = state.currentSequences[state.currentRound]
 
   return {
     ...state,
