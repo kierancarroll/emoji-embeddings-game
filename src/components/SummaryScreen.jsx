@@ -7,8 +7,8 @@ import styles from './SummaryScreen.module.css'
 export default function SummaryScreen({ game }) {
   const { currentLevel, roundResults, totalScore, startLevel, goHome } = game
 
-  const avg     = roundResults.reduce((s, r) => s + r.score, 0) / roundResults.length
-  const passed  = roundResults.filter(r => r.passed).length
+  const avg = roundResults.reduce((s, r) => s + r.userScore, 0) / roundResults.length
+  const passed = roundResults.filter(r => r.passed).length
   const allPass = passed === roundResults.length
   const nextLevel = currentLevel + 1
 
@@ -52,7 +52,7 @@ export default function SummaryScreen({ game }) {
               </div>
               <div className={styles.roundScore}>
                 <span className={r.passed ? styles.passText : styles.failText}>
-                  {r.score.toFixed(3)}
+                  {r.userScore.toFixed(3)}
                 </span>
                 <span className={styles.roundVerdict}>{r.passed ? 'PASS' : 'FAIL'}</span>
               </div>
