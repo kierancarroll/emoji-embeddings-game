@@ -233,4 +233,72 @@
     .levelGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .consistencySection {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--r-md);
+        padding: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .consistencyLabel {
+        font-size: 0.58rem;
+        letter-spacing: 0.14em;
+        color: var(--ink3);
+    }
+
+    .consistencyRows {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .consistencyRow {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        font-size: 0.78rem;
+    }
+
+    .runLabel {
+        font-size: 0.6rem;
+        color: var(--ink3);
+        min-width: 36px;
+        flex-shrink: 0;
+    }
+
+    .runSentence {
+        flex: 1;
+        color: var(--ink2);
+    }
+
+    .runScore {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--ink3);
+        flex-shrink: 0;
+    }
+
+    .varianceRow {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.75rem;
+        color: var(--ink3);
+    }
+
+    .varianceVal {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .varianceHint {
+        font-size: 0.65rem;
+    }
 }

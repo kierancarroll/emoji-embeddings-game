@@ -77,25 +77,37 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Step 1: Get Gemini's interpretation of the emoji
-    const llmSentence = await getGeminiInterpretation(emojiSequence, apiKey)
-
-    // Step 2: Embed all three in parallel
-    const [embUser, embTarget, embLLM] = await Promise.all([
-      getEmbedding(userSentence, apiKey),
-      getEmbedding(targetSentence, apiKey),
-      getEmbedding(llmSentence, apiKey),
+    const [llm1, llm2, llm3] = await Promise.all([
+      getGeminiInterpretation(emojiSequence, apiKey),
+      getGeminiInterpretation(emojiSequence, apiKey),
+      getGeminiInterpretation(emojiSequence, apiKey),
     ])
 
-    // Step 3: Score both against target concept
+    const [embUser, embTarget, embLLM1, embLLM2, embLLM3] = await Promise.all([
+      getEmbedding(userSentence, apiKey),
+      getEmbedding(targetSentence, apiKey),
+      getEmbedding(llm1, apiKey),
+      getEmbedding(llm2, apiKey),
+      getEmbedding(llm3, apiKey),
+    ])
+
     const userScore = cosineSimilarity(embUser, embTarget)
-    const llmScore = cosineSimilarity(embLLM, embTarget)
+    const llmScore1 = cosineSimilarity(embLLM1, embTarget)
+    const llmScore2 = cosineSimilarity(embLLM2, embTarget)
+    const llmScore3 = cosineSimilarity(embLLM3, embTarget)
+    const llmAvg = (llmScore1 + llmScore2 + llmScore3) / 3
+    const llmVariance = parseFloat(
+      (((llmScore1 - llmAvg) ** 2 + (llmScore2 - llmAvg) ** 2 + (llmScore3 - llmAvg) ** 2) / 3).toFixed(4)
+    )
 
     return res.status(200).json({
       targetSentence,
       userScore: parseFloat(userScore.toFixed(4)),
-      llmScore: parseFloat(llmScore.toFixed(4)),
-      llmSentence,
+      llmScore: parseFloat(llmAvg.toFixed(4)),      // avg of 3 runs
+      llmSentence: llm1,                               // show first for display
+      llmSentences: [llm1, llm2, llm3],                 // all 3 for UI
+      llmScores: [llmScore1, llmScore2, llmScore3],  // individual scores
+      llmVariance,                                       // key metric
     })
 
   } catch (err) {

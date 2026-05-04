@@ -68,18 +68,21 @@ function reducer(state, action) {
         roundResults: [
           ...state.roundResults,
           {
-            emoji:          seq?.emoji,
+            emoji: seq?.emoji,
             userSentence,
             targetSentence,
             userScore,
             llmScore,
             llmSentence,
+            llmSentences,    // ← add
+            llmScores,       // ← add
+            llmVariance,     // ← add
             passed,
             pointsEarned,
-            strategy:       seq?.strategy,
-            attribute:      seq?.attribute,
-            neighbours:     seq?.neighbours || [],
-            userBeatsLLM:   userScore > llmScore,
+            strategy: seq?.strategy,
+            attribute: seq?.attribute,
+            neighbours: seq?.neighbours || [],
+            userBeatsLLM: userScore > llmScore,
           }
         ],
         totalScore: state.totalScore + pointsEarned,
@@ -151,7 +154,7 @@ export function useGameState() {
         body: JSON.stringify({
           userSentence,
           targetSentence: currentSeq.target,
-          emojiSequence:  currentSeq.emoji,
+          emojiSequence: currentSeq.emoji,
         }),
       })
 
@@ -162,9 +165,12 @@ export function useGameState() {
         type: 'SUBMIT_SUCCESS',
         userSentence,
         targetSentence: data.targetSentence,
-        userScore:      data.userScore,
-        llmScore:       data.llmScore,
-        llmSentence:    data.llmSentence,
+        userScore: data.userScore,
+        llmScore: data.llmScore,
+        llmSentence: data.llmSentence,
+        llmSentences: data.llmSentences,   // ← new
+        llmScores: data.llmScores,      // ← new
+        llmVariance: data.llmVariance,    // ← new
       })
     } catch (err) {
       dispatch({ type: 'SUBMIT_ERROR', message: err.message })
@@ -172,11 +178,11 @@ export function useGameState() {
   }, [state.currentSequences, state.currentRound])
 
   const nextRound = useCallback(() => dispatch({ type: 'NEXT_ROUND' }), [])
-  const goHome    = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
-  const restart   = useCallback(() => dispatch({ type: 'RESTART' }), [])
+  const goHome = useCallback(() => dispatch({ type: 'GO_HOME' }), [])
+  const restart = useCallback(() => dispatch({ type: 'RESTART' }), [])
 
   const currentLevelData = LEVELS.find(l => l.level === state.currentLevel)
-  const currentSequence  = state.currentSequences[state.currentRound]
+  const currentSequence = state.currentSequences[state.currentRound]
 
   return {
     ...state,

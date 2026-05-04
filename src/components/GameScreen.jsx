@@ -63,7 +63,6 @@ export default function GameScreen({ game }) {
   const progress = ((currentLevel - 1) / LEVELS.length) +
                    (currentRound / (ROUNDS_PER_LEVEL * LEVELS.length))
 
-  // Loading state while sequences are being fetched
   if (isLoadingSequence || !currentSequence) {
     return (
       <div className={styles.root}>
@@ -123,7 +122,6 @@ export default function GameScreen({ game }) {
           {currentLevelData?.name} · Round {currentRound + 1}/{ROUNDS_PER_LEVEL}
         </div>
 
-        {/* Emoji display */}
         <AnimatePresence mode="wait">
           <motion.div
             key={`${currentLevel}-${currentRound}`}
@@ -139,7 +137,6 @@ export default function GameScreen({ game }) {
 
         <p className={styles.prompt}>What does this emoji sequence mean?</p>
 
-        {/* Input area */}
         <div className={styles.inputWrap}>
           <textarea
             ref={textareaRef}
@@ -165,14 +162,12 @@ export default function GameScreen({ game }) {
           </div>
         </div>
 
-        {/* Error */}
         {error && (
           <motion.div className={styles.errorBanner} initial={{ opacity:0 }} animate={{ opacity:1 }}>
             ⚠ {error} — <button onClick={() => submitAnswer(input)}>retry</button>
           </motion.div>
         )}
 
-        {/* ── Result card ── */}
         <AnimatePresence>
           {hasResult && (
             <motion.div
@@ -233,7 +228,37 @@ export default function GameScreen({ game }) {
                 </div>
               </div>
 
-              {/* Section 3 — Educational layer */}
+              {/* Section 3 — Consistency */}
+              {lastResult.llmSentences?.length > 0 && (
+                <motion.div
+                  className={styles.consistencySection}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <div className={styles.consistencyLabel}>GEMINI CONSISTENCY — 3 RUNS</div>
+                  <div className={styles.consistencyRows}>
+                    {lastResult.llmSentences.map((s, i) => (
+                      <div key={i} className={styles.consistencyRow}>
+                        <span className={styles.runLabel}>Run {i + 1}</span>
+                        <span className={styles.runSentence}>{s}</span>
+                        <span className={styles.runScore}>{lastResult.llmScores[i].toFixed(3)}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className={styles.varianceRow}>
+                    <span>Variance</span>
+                    <span className={`${styles.varianceVal} ${lastResult.llmVariance < 0.005 ? styles.pass : styles.fail}`}>
+                      {lastResult.llmVariance.toFixed(4)}
+                    </span>
+                    <span className={styles.varianceHint}>
+                      {lastResult.llmVariance < 0.005 ? '✓ Consistent' : '⚠ Inconsistent'}
+                    </span>
+                  </div>
+                </motion.div>
+              )}
+
+              {/* Section 4 — Educational layer */}
               {strategyInfo && (
                 <motion.div
                   className={styles.eduSection}
@@ -252,11 +277,10 @@ export default function GameScreen({ game }) {
                   </div>
                   <p className={styles.eduText}>{strategyInfo.explanation}</p>
 
-                  {/* Neighbours */}
                   {lastResult.neighbours?.length > 0 && (
                     <div className={styles.neighbours}>
                       <div className={styles.neighboursLabel}>
-                        Other human translations of "{lastResult.targetSentence}":
+                        Other human expressions of "{lastResult.targetSentence}":
                       </div>
                       <div className={styles.neighboursList}>
                         {lastResult.neighbours.slice(0, 6).map((n, i) => (

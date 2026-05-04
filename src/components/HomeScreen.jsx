@@ -4,12 +4,12 @@ import { LEVELS } from '../data/levels'
 import styles from './HomeScreen.module.css'
 
 const tagColors = {
-  INTRO:  'var(--teal)',
-  EASY:   'var(--lime)',
+  INTRO: 'var(--teal)',
+  EASY: 'var(--lime)',
   MEDIUM: '#f7c948',
-  HARD:   '#ff9f3e',
+  HARD: '#ff9f3e',
   EXPERT: 'var(--coral)',
-  CHAOS:  '#c084fc',
+  CHAOS: '#c084fc',
 }
 
 export default function HomeScreen({ game }) {
@@ -37,8 +37,9 @@ export default function HomeScreen({ game }) {
             Emoji<span className={styles.accent}>Lingo</span>
           </h1>
           <p className={styles.sub}>
-            Decode emoji sequences into natural language.<br />
-            Scored by semantic similarity — not exact match.
+            Decode emoji sequences into natural language — then see how Gemini does it.<br />
+            Scored by semantic similarity using real embedding vectors.<br />
+            Can you out-interpret an AI? Find out which emoji stump it most.
           </p>
           {totalScore > 0 && (
             <div className={styles.scoreChip}>
@@ -56,9 +57,9 @@ export default function HomeScreen({ game }) {
           transition={{ delay: 0.15, duration: 0.4 }}
         >
           {LEVELS.map((lvl, i) => {
-            const unlocked  = unlockedLevels.includes(lvl.level)
+            const unlocked = unlockedLevels.includes(lvl.level)
             const completed = unlockedLevels.includes(lvl.level + 1) ||
-                              (lvl.level === 6 && unlockedLevels.includes(7))
+              (lvl.level === 6 && unlockedLevels.includes(7))
             const color = tagColors[lvl.tag]
 
             return (
@@ -103,7 +104,7 @@ export default function HomeScreen({ game }) {
           <button className={styles.btnStart} onClick={() => startLevel(nextLevel.level)}>
             {totalScore > 0 ? `Continue → Level ${nextLevel.level}` : 'Start Playing'}
           </button>
-          <p className={styles.ctaHint}>Pass threshold: 0.65 cosine similarity</p>
+          <p className={styles.ctaHint}>Based on the ELCo dataset · human annotated emoji expressions created by Yang et al. 2024</p>
         </motion.div>
       </div>
     </div>
