@@ -4,10 +4,12 @@
   "framework": "vite",
   "functions": {
     "api/translate.js": {
-      "includeFiles": "api/data/**"
+      "includeFiles": "api/data/**",
+      "maxDuration": 30
     },
     "api/sequence.js": {
-      "includeFiles": "api/data/**"
+      "includeFiles": "api/data/**",
+      "maxDuration": 30
     }
   },
   "rewrites": [
