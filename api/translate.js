@@ -35,7 +35,7 @@ Examples of good answers:
 Respond with ONLY the interpretation, nothing else.`
 
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -53,7 +53,7 @@ Respond with ONLY the interpretation, nothing else.`
 function cosineSimilarity(a, b) {
   let dot = 0, magA = 0, magB = 0
   for (let i = 0; i < a.length; i++) {
-    dot  += a[i] * b[i]
+    dot += a[i] * b[i]
     magA += a[i] * a[i]
     magB += b[i] * b[i]
   }
@@ -89,12 +89,12 @@ export default async function handler(req, res) {
 
     // Step 3: Score both against target concept
     const userScore = cosineSimilarity(embUser, embTarget)
-    const llmScore  = cosineSimilarity(embLLM, embTarget)
+    const llmScore = cosineSimilarity(embLLM, embTarget)
 
     return res.status(200).json({
       targetSentence,
-      userScore:   parseFloat(userScore.toFixed(4)),
-      llmScore:    parseFloat(llmScore.toFixed(4)),
+      userScore: parseFloat(userScore.toFixed(4)),
+      llmScore: parseFloat(llmScore.toFixed(4)),
       llmSentence,
     })
 
