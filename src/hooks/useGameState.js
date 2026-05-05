@@ -57,7 +57,8 @@ function reducer(state, action) {
       return { ...state, isLoading: true, error: null }
 
     case 'SUBMIT_SUCCESS': {
-      const { userSentence, targetSentence, userScore, llmScore, llmSentence } = action
+      const { userSentence, targetSentence, userScore, llmScore, llmSentence,
+        llmSentences, llmScores, llmVariance } = action
       const passed = userScore >= PASS_THRESHOLD
       const pointsEarned = passed ? Math.round(userScore * 100) : Math.round(userScore * 25)
       const seq = state.currentSequences[state.currentRound]
