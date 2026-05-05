@@ -24,21 +24,21 @@ async function getEmbeddings(texts, apiKey) {
 }
 
 async function getGeminiInterpretation(emojiSequence, apiKey) {
-  const prompt = `You are interpreting an emoji sequence as a human would.
+  const prompt = `You are interpreting an emoji sequence.
 
 Emoji sequence: ${emojiSequence}
 
-Give a short, natural English phrase or sentence (max 8 words) that captures what this emoji sequence means or expresses. Be direct and concise — no explanation, just the interpretation.
+Give a short, natural English adjective noun composition (max 2 words) that captures what this emoji sequence means or expresses. Be direct and concise — no explanation, just the interpretation.
 
 Examples of good answers:
 - "big business"
-- "it is raining outside"
-- "I love my dog"
+- "bad medicine"
+- "clear glass"
 
 Respond with ONLY the interpretation, nothing else.`
 
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
