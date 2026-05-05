@@ -4,20 +4,23 @@
 // 2. Embeds user sentence + Gemini sentence + target concept
 // 3. Returns both scores + Gemini's sentence for UI comparison
 
-async function getEmbedding(text, apiKey) {
+async function getEmbeddings(texts, apiKey) {
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:embedContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:batchEmbedContents?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        content: { parts: [{ text }] }
+        requests: texts.map(text => ({
+          model: 'models/gemini-embedding-2',
+          content: { parts: [{ text }] }
+        }))
       })
     }
   )
   if (!res.ok) throw new Error(`Embedding API error: ${await res.text()}`)
   const data = await res.json()
-  return data.embedding.values
+  return data.embeddings.map(e => e.values)
 }
 
 async function getGeminiInterpretation(emojiSequence, apiKey) {
@@ -35,7 +38,7 @@ Examples of good answers:
 Respond with ONLY the interpretation, nothing else.`
 
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -83,13 +86,9 @@ export default async function handler(req, res) {
       getGeminiInterpretation(emojiSequence, apiKey),
     ])
 
-    const [embUser, embTarget, embLLM1, embLLM2, embLLM3] = await Promise.all([
-      getEmbedding(userSentence, apiKey),
-      getEmbedding(targetSentence, apiKey),
-      getEmbedding(llm1, apiKey),
-      getEmbedding(llm2, apiKey),
-      getEmbedding(llm3, apiKey),
-    ])
+    const [embUser, embTarget, embLLM1, embLLM2, embLLM3] = await getEmbeddings(
+      [userSentence, targetSentence, llm1, llm2, llm3], apiKey
+    )
 
     const userScore = cosineSimilarity(embUser, embTarget)
     const llmScore1 = cosineSimilarity(embLLM1, embTarget)
