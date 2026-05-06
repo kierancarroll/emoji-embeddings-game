@@ -1,12 +1,11 @@
 // api/translate.js
 // Vercel Serverless Function
-// 1. Gets Gemini's interpretation of the emoji sequence
-// 2. Embeds user sentence + Gemini sentence + target concept
-// 3. Returns both scores + Gemini's sentence for UI comparison
+// Text generation: Groq (fast, generous quota)
+// Embeddings:      Gemini (separate quota)
 
-async function getEmbeddings(texts, apiKey) {
+async function getEmbeddings(texts, geminiKey) {
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:batchEmbedContents?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:batchEmbedContents?key=${geminiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -23,7 +22,7 @@ async function getEmbeddings(texts, apiKey) {
   return data.embeddings.map(e => e.values)
 }
 
-async function getGeminiInterpretation(emojiSequence, apiKey) {
+async function getLLMInterpretation(emojiSequence, groqKey) {
   const prompt = `You are interpreting an emoji sequence.
 
 Emoji sequence: ${emojiSequence}
@@ -33,19 +32,24 @@ Give a short, natural English adjective noun composition (max 2 words) that capt
 Respond with ONLY the interpretation, nothing else.`
 
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
+    'https://api.groq.com/openai/v1/chat/completions',
     {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${groqKey}`
+      },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 50 }
+        model: 'llama-3.1-8b-instant',
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: 50,
+        temperature: 0.3
       })
     }
   )
-  if (!res.ok) throw new Error(`Gemini API error: ${await res.text()}`)
+  if (!res.ok) throw new Error(`Groq API error: ${await res.text()}`)
   const data = await res.json()
-  return data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || ''
+  return data.choices[0].message.content.trim()
 }
 
 function cosineSimilarity(a, b) {
@@ -69,20 +73,25 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing userSentence, targetSentence, or emojiSequence' })
   }
 
-  const apiKey = process.env.GEMINI_API_KEY
-  if (!apiKey) {
-    return res.status(500).json({ error: 'API key not configured' })
-  }
+  // Vercel reads these automatically from environment variables
+  const geminiKey = process.env.GEMINI_API_KEY
+  const groqKey = process.env.GROQ_API_KEY
+
+  if (!geminiKey) return res.status(500).json({ error: 'GEMINI_API_KEY not configured' })
+  if (!groqKey) return res.status(500).json({ error: 'GROQ_API_KEY not configured' })
 
   try {
+    // 3x LLM interpretations in parallel via Groq
     const [llm1, llm2, llm3] = await Promise.all([
-      getGeminiInterpretation(emojiSequence, apiKey),
-      getGeminiInterpretation(emojiSequence, apiKey),
-      getGeminiInterpretation(emojiSequence, apiKey),
+      getLLMInterpretation(emojiSequence, groqKey),
+      getLLMInterpretation(emojiSequence, groqKey),
+      getLLMInterpretation(emojiSequence, groqKey),
     ])
 
+    // Batch embed all 5 in one Gemini call
     const [embUser, embTarget, embLLM1, embLLM2, embLLM3] = await getEmbeddings(
-      [userSentence, targetSentence, llm1, llm2, llm3], apiKey
+      [userSentence, targetSentence, llm1, llm2, llm3],
+      geminiKey
     )
 
     const userScore = cosineSimilarity(embUser, embTarget)
@@ -97,11 +106,11 @@ export default async function handler(req, res) {
     return res.status(200).json({
       targetSentence,
       userScore: parseFloat(userScore.toFixed(4)),
-      llmScore: parseFloat(llmAvg.toFixed(4)),      // avg of 3 runs
-      llmSentence: llm1,                               // show first for display
-      llmSentences: [llm1, llm2, llm3],                 // all 3 for UI
-      llmScores: [llmScore1, llmScore2, llmScore3],  // individual scores
-      llmVariance,                                       // key metric
+      llmScore: parseFloat(llmAvg.toFixed(4)),
+      llmSentence: llm1,
+      llmSentences: [llm1, llm2, llm3],
+      llmScores: [llmScore1, llmScore2, llmScore3],
+      llmVariance,
     })
 
   } catch (err) {
