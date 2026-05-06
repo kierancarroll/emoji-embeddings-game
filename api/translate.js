@@ -30,11 +30,6 @@ Emoji sequence: ${emojiSequence}
 
 Give a short, natural English adjective noun composition (max 2 words) that captures what this emoji sequence means or expresses. Be direct and concise — no explanation, just the interpretation.
 
-Examples of good answers:
-- "big business"
-- "bad medicine"
-- "clear glass"
-
 Respond with ONLY the interpretation, nothing else.`
 
   const res = await fetch(
