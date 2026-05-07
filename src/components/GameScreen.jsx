@@ -9,12 +9,12 @@ const STRATEGY_INFO = {
   'Direct': {
     label: 'DIRECT',
     color: 'var(--teal)',
-    explanation: 'Each emoji directly represents its literal meaning. These are the easiest for both humans and AI to decode.',
+    explanation: 'Each emoji in the sequence directly represents its literal meaning. These are the easiest for both humans and AI to decode.',
   },
   'Metaphorical': {
     label: 'METAPHORICAL',
     color: '#f7c948',
-    explanation: 'Emojis are used figuratively — their cultural or symbolic meaning matters more than their literal one. LLMs often struggle here.',
+    explanation: 'Emojis are used figuratively — their cultural or symbolic meaning matters more than their literal one and the combination of emojis conveys more information than the emojis by themselves. LLMs often struggle here.',
   },
   'Semantic list': {
     label: 'SEMANTIC LIST',
@@ -25,6 +25,11 @@ const STRATEGY_INFO = {
     label: 'REDUPLICATION',
     color: '#c084fc',
     explanation: 'The same emoji repeated to intensify meaning — like saying something louder. A common human convention that AI often misses.',
+  },
+  'Single': {
+    label: 'SINGLE',
+    color: 'var(--teal)',
+    explanation: 'A single emoji captures the entire concept on its own. Simple but surprisingly ambiguous — the same emoji can mean very different things in different contexts.',
   },
 }
 
@@ -40,7 +45,7 @@ export default function GameScreen({ game }) {
   const textareaRef = useRef(null)
 
   const lastResult = roundResults[currentRound]
-  const hasResult  = !!lastResult
+  const hasResult = !!lastResult
 
   useEffect(() => {
     setInput('')
@@ -61,7 +66,7 @@ export default function GameScreen({ game }) {
   }
 
   const progress = ((currentLevel - 1) / LEVELS.length) +
-                   (currentRound / (ROUNDS_PER_LEVEL * LEVELS.length))
+    (currentRound / (ROUNDS_PER_LEVEL * LEVELS.length))
 
   if (isLoadingSequence || !currentSequence) {
     return (
@@ -112,7 +117,7 @@ export default function GameScreen({ game }) {
         <motion.div
           className={styles.progressFill}
           animate={{ width: `${progress * 100}%` }}
-          transition={{ duration: 0.6, ease: [0.4,0,0.2,1] }}
+          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
         />
       </div>
 
@@ -163,7 +168,7 @@ export default function GameScreen({ game }) {
         </div>
 
         {error && (
-          <motion.div className={styles.errorBanner} initial={{ opacity:0 }} animate={{ opacity:1 }}>
+          <motion.div className={styles.errorBanner} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             ⚠ {error} — <button onClick={() => submitAnswer(input)}>retry</button>
           </motion.div>
         )}
@@ -175,7 +180,7 @@ export default function GameScreen({ game }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.35, ease: [0.4,0,0.2,1] }}
+              transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
             >
               {/* Section 1 — Score comparison */}
               <div className={styles.scoreSection}>

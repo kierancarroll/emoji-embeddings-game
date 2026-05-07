@@ -43,7 +43,7 @@ Respond with ONLY the interpretation, nothing else.`
         model: 'llama-3.1-8b-instant',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 50,
-        temperature: 0.3
+        temperature: 0.8
       })
     }
   )
