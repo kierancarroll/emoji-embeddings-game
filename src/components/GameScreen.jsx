@@ -195,7 +195,7 @@ export default function GameScreen({ game }) {
                 </div>
                 <div className={styles.vsLabel}>VS</div>
                 <div className={styles.scoreCol}>
-                  <div className={styles.scoreLabel}>GEMINI</div>
+                  <div className={styles.scoreLabel}>GROQ</div>
                   <div className={`${styles.scoreNum} ${lastResult.llmScore >= PASS_THRESHOLD ? styles.pass : styles.fail}`}>
                     {lastResult.llmScore.toFixed(3)}
                   </div>
@@ -228,7 +228,7 @@ export default function GameScreen({ game }) {
                   <span className={styles.compText} style={{ color: 'var(--ink2)' }}>{lastResult.userSentence}</span>
                 </div>
                 <div className={styles.compRow}>
-                  <span className={styles.compLabel}>GEMINI</span>
+                  <span className={styles.compLabel}>GROQ</span>
                   <span className={styles.compText} style={{ color: 'var(--ink2)' }}>{lastResult.llmSentence}</span>
                 </div>
               </div>
@@ -241,12 +241,12 @@ export default function GameScreen({ game }) {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
-                  <div className={styles.consistencyLabel}>GEMINI CONSISTENCY — 3 RUNS</div>
+                  <div className={styles.consistencyLabel}>Groq (Llama 3.1) Consistency — 3 Runs </div>
                   <div className={styles.consistencyRows}>
                     {lastResult.llmSentences.map((s, i) => (
                       <div key={i} className={styles.consistencyRow}>
-                        <span className={styles.runLabel}>Run {i + 1}</span>
-                        <span className={styles.runSentence}>{s}</span>
+                        <span className={styles.runLabel}>Run {i + 1}: </span>
+                        <span className={styles.runSentence}>{s} </span>
                         <span className={styles.runScore}>{lastResult.llmScores[i].toFixed(3)}</span>
                       </div>
                     ))}
